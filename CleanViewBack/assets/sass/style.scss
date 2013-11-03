@@ -514,13 +514,20 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   max-width: 1000px;
 }
 .b-main{@extend .g-container;}
-.g-input{border-width: 2px !important;}
+.g-input{
+  border-width: 2px !important; 
+  webkit-box-shadow: none; 
+  box-shadow: none; 
+  moz-box-shadow: none;
+}
 /* END Other stuff */
 
 /* Header */
 .b-header{
   padding-top: 40px;
   background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .b-header__logo{
   @extend .pull-left;
@@ -568,7 +575,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 .b-signup__main{
   @extend .jumbotron;
-  margin: 80px 0;
+  margin: 80px 20px;
   text-align: center;
 }
 .b-signup__logo{
@@ -596,9 +603,14 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 /* END Signup main */
 
+.b-main{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* Features index */
 .b-features{
-
+  
 }
 .b-features-col{
   @extend .g-span4;
@@ -622,15 +634,14 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 /*------------ Sign up page ------------- */
 .b-singnup-body{
-  //background-color: $plump;
-  background-color: #BDAEC6;
+  background-color: #e6e6e6;
+  //background-color: #BDAEC6;
 }
-
 .b-signup-form{
   @include column(6);
   @include push(3);
   @include pull(3);
-  border: 2px solid #9C8AA5;
+  border: 2px solid #E2E3D9; //#9C8AA5
   overflow:hidden;
 }
 .b-signup-form__create-account{
@@ -655,7 +666,6 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 .b-signup-form__button{
   @extend .btn;
   font-size: 14px;
-  //padding: 14px 24px;
   margin-top: 20px;
   background-color: $gold;
   border-color: $gold;
@@ -665,6 +675,9 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 .b-signup-form__button:hover, .b-signup-form__button:active, .b-signup-form__button:focus{
   background-color: $gold;
   border-color: $gold;
+}
+.b-signup-form__name:focus, .b-signup-form__email:focus, .b-signup-form__password:focus, .b-signup-form__password-confirm:focus{
+  border-color: $plump !important;
 }
 
 /*---------- END Sign up page ----------- */
@@ -705,5 +718,6 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   }
   .b-signup-form__button{
     margin: auto;
+    margin-top: 20px;
   }
 }  

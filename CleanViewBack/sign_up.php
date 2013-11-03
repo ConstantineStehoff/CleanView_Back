@@ -31,22 +31,22 @@
           <h2 class="b-signup-form__title">Create an Account</h2>
           <form>
             <div class="b-signup-form__input-group">
-              <label class="control-label" for="inputEmail">Name</label>
+              <label class="control-label">Name</label>
               <input type="text" class="b-signup-form__name" placeholder="e.g., Jane Doe">
             </div>  
             
             <div class="b-signup-form__input-group">
-              <label class="control-label" for="inputEmail">Email</label>
+              <label class="control-label">Email</label>
               <input type="text" class="b-signup-form__email" placeholder="e.g., jd@doe.net">
             </div>
             
             <div class="b-signup-form__input-group">
-              <label class="control-label" for="inputPassword">Password</label>
+              <label class="control-label">Password</label>
               <input type="password" class="b-signup-form__password" placeholder="e.g., *********">
             </div>  
               
             <div class="b-signup-form__input-group">
-              <label class="control-label" for="inputPassword">Confirm Password</label>
+              <label class="control-label">Confirm Password</label>
               <input type="password" class="b-signup-form__password-confirm" placeholder="e.g., *********">
             </div>  
               
@@ -59,4 +59,10 @@
         </div>
 
       </div>
-   </body> 
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+      <script>
+        $(".b-signup-form__name").focus();
+      </script>  
+   </body>
+</html>    

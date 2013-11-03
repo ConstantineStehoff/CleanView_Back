@@ -9344,43 +9344,48 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /* line 517, ../sass/style.scss */
 .g-input, .b-login-form__email, .b-login-form__password, .b-signup-form__name, .b-signup-form__email, .b-signup-form__password, .b-signup-form__password-confirm {
   border-width: 2px !important;
+  webkit-box-shadow: none;
+  box-shadow: none;
+  moz-box-shadow: none;
 }
 
 /* END Other stuff */
 /* Header */
-/* line 521, ../sass/style.scss */
+/* line 526, ../sass/style.scss */
 .b-header {
   padding-top: 40px;
   background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-/* line 525, ../sass/style.scss */
+/* line 532, ../sass/style.scss */
 .b-header__logo {
   font-size: 25px;
   line-height: 30px;
   margin-top: 0;
 }
 
-/* line 539, ../sass/style.scss */
+/* line 546, ../sass/style.scss */
 .b-login-form__button {
   color: white;
   background-color: #234182;
   border-color: #234182;
 }
 
-/* line 545, ../sass/style.scss */
+/* line 552, ../sass/style.scss */
 .b-login-form__button:hover, .b-login-form__button:active, .b-login-form__button:focus {
   color: white;
   background-color: #234182;
   border-color: #234182;
 }
 
-/* line 550, ../sass/style.scss */
+/* line 557, ../sass/style.scss */
 .b-login-form__rmbr-label {
   display: inline-block;
 }
 
-/* line 555, ../sass/style.scss */
+/* line 562, ../sass/style.scss */
 .b-login-form__forgot-password {
   display: inline-block;
   margin-left: 55px;
@@ -9388,7 +9393,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 /* END Header */
 /* Signup main */
-/* line 563, ../sass/style.scss */
+/* line 570, ../sass/style.scss */
 .b-signup {
   background-color: #5b3b70;
   color: white;
@@ -9396,25 +9401,25 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   padding-bottom: 20px;
 }
 
-/* line 569, ../sass/style.scss */
+/* line 576, ../sass/style.scss */
 .b-signup__main {
-  margin: 80px 0;
+  margin: 80px 20px;
   text-align: center;
 }
 
-/* line 574, ../sass/style.scss */
+/* line 581, ../sass/style.scss */
 .b-signup__logo {
   font-size: 100px;
   line-height: 1;
 }
 
-/* line 578, ../sass/style.scss */
+/* line 585, ../sass/style.scss */
 .b-signup__lead {
   font-size: 24px;
   line-height: 1.25;
 }
 
-/* line 583, ../sass/style.scss */
+/* line 590, ../sass/style.scss */
 .b-signup__button {
   font-size: 21px;
   padding: 14px 24px;
@@ -9424,28 +9429,34 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   text-shadow: none;
 }
 
-/* line 593, ../sass/style.scss */
+/* line 600, ../sass/style.scss */
 .b-signup__button:hover, .b-signup__button:active, .b-signup__button:focus {
   background-color: #caa91e;
   border-color: #caa91e;
 }
 
 /* END Signup main */
+/* line 606, ../sass/style.scss */
+.b-main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* Features index */
-/* line 603, ../sass/style.scss */
+/* line 615, ../sass/style.scss */
 .b-features-col {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-/* line 608, ../sass/style.scss */
+/* line 620, ../sass/style.scss */
 .b-features-col__title, .b-features-col__text {
   text-align: center;
 }
 
 /* END Features index */
 /* Calendar block */
-/* line 615, ../sass/style.scss */
+/* line 627, ../sass/style.scss */
 .b-calendar__week-row {
   display: block;
   width: 100%;
@@ -9467,12 +9478,12 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /* Dashboard block */
 /* END Dashboard block */
 /*------------ Sign up page ------------- */
-/* line 624, ../sass/style.scss */
+/* line 636, ../sass/style.scss */
 .b-singnup-body {
-  background-color: #BDAEC6;
+  background-color: #e6e6e6;
 }
 
-/* line 629, ../sass/style.scss */
+/* line 640, ../sass/style.scss */
 .b-signup-form {
   display: inline;
   float: left;
@@ -9480,11 +9491,11 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   margin: 0 0%;
   margin-left: 25%;
   margin-right: 25%;
-  border: 2px solid #9C8AA5;
+  border: 2px solid #E2E3D9;
   overflow: hidden;
 }
 
-/* line 636, ../sass/style.scss */
+/* line 647, ../sass/style.scss */
 .b-signup-form__create-account {
   display: inline;
   float: left;
@@ -9492,7 +9503,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   margin: 0 0%;
 }
 
-/* line 641, ../sass/style.scss */
+/* line 652, ../sass/style.scss */
 .b-signup-form__social {
   display: inline;
   float: left;
@@ -9500,18 +9511,18 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   margin: 0 0%;
 }
 
-/* line 645, ../sass/style.scss */
+/* line 656, ../sass/style.scss */
 .b-signup-form__title, .b-signup-form__input-group, .b-signup-form__button {
   margin-top: 10px;
   margin-left: 20px;
 }
 
-/* line 649, ../sass/style.scss */
+/* line 660, ../sass/style.scss */
 .b-signup-form__title {
   font-size: 20px;
 }
 
-/* line 655, ../sass/style.scss */
+/* line 666, ../sass/style.scss */
 .b-signup-form__button {
   font-size: 14px;
   margin-top: 20px;
@@ -9521,10 +9532,15 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   text-shadow: none;
 }
 
-/* line 665, ../sass/style.scss */
+/* line 675, ../sass/style.scss */
 .b-signup-form__button:hover, .b-signup-form__button:active, .b-signup-form__button:focus {
   background-color: #caa91e;
   border-color: #caa91e;
+}
+
+/* line 679, ../sass/style.scss */
+.b-signup-form__name:focus, .b-signup-form__email:focus, .b-signup-form__password:focus, .b-signup-form__password-confirm:focus {
+  border-color: #5b3b70 !important;
 }
 
 /*---------- END Sign up page ----------- */
@@ -9532,7 +9548,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /* END Footer */
 /* Responsiveness */
 @media (min-width: 768px) and (max-width: 1033px) {
-  /* line 679, ../sass/style.scss */
+  /* line 692, ../sass/style.scss */
   .b-signup-form {
     display: inline;
     float: left;
@@ -9543,7 +9559,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   }
 }
 @media (min-width: 585px) and (max-width: 767px) {
-  /* line 686, ../sass/style.scss */
+  /* line 699, ../sass/style.scss */
   .b-signup-form {
     display: inline;
     float: left;
@@ -9554,13 +9570,13 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   }
 }
 @media (max-width: 584px) {
-  /* line 693, ../sass/style.scss */
+  /* line 706, ../sass/style.scss */
   .b-singnup-body {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  /* line 697, ../sass/style.scss */
+  /* line 710, ../sass/style.scss */
   .b-signup-form, .b-signup-form__create-account, .b-signup-form__social {
     display: inline;
     float: left;
@@ -9568,18 +9584,19 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     margin: 0 0%;
   }
 
-  /* line 700, ../sass/style.scss */
+  /* line 713, ../sass/style.scss */
   .b-signup-form__create-account, .b-signup-form__social {
     text-align: center;
   }
 
-  /* line 703, ../sass/style.scss */
+  /* line 716, ../sass/style.scss */
   .b-signup-form__input-group, .b-signup-form__title {
     margin-left: 0;
   }
 
-  /* line 706, ../sass/style.scss */
+  /* line 719, ../sass/style.scss */
   .b-signup-form__button {
     margin: auto;
+    margin-top: 20px;
   }
 }
