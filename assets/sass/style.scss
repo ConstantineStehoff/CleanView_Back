@@ -11,7 +11,7 @@
 // Specify the number of columns and set column and gutter widths
 $columns: 12;
 $column-width: 60;
-$gutter-width: 20;
+$gutter-width: 0;
 
 // Remove the definition below for a pixel-based layout
 $total-width: 100%;
@@ -605,6 +605,9 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.b-features-col__title, .b-features-col__text{
+  text-align: center;
+}
 /* END Features index */
 
 /* Calendar block */
@@ -618,21 +621,25 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /* END Dashboard block */
 
 /*------------ Sign up page ------------- */
-.b-singnup-body{}
+.b-singnup-body{
+  //background-color: $plump;
+  background-color: #BDAEC6;
+}
 
 .b-signup-form{
-  width: 650px;
-  margin: auto;
-  border: 2px solid black;
+  @include column(6);
+  @include push(3);
+  @include pull(3);
+  border: 2px solid #9C8AA5;
   overflow:hidden;
 }
 .b-signup-form__create-account{
-  @extend .g-span6;
+  @include column(6);
   //text-align: center;
   //background-color: green;
 }
 .b-signup-form__social{
-  @extend .g-span6;
+  @include column(6);
   //background-color: red;
 }
 .b-signup-form__title, .b-signup-form__input-group, .b-signup-form__button{
@@ -665,3 +672,38 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /* Footer */
 	footer{@extend .g-span12;}
 /* END Footer */
+
+
+/* Responsiveness */
+@media (min-width: 768px) and (max-width: 1033px) { 
+  .b-signup-form{
+    @include column(8);
+    @include push(2);
+    @include pull(2);
+  }  
+}
+@media (min-width: 585px) and (max-width: 767px) { 
+  .b-signup-form{
+    @include column(10);
+    @include push(1);
+    @include pull(1);
+  }  
+}
+@media (max-width: 584px){
+  .b-singnup-body{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .b-signup-form, .b-signup-form__create-account, .b-signup-form__social{
+    @include column(12);
+  }
+  .b-signup-form__create-account, .b-signup-form__social{
+    text-align: center;
+  }
+  .b-signup-form__input-group, .b-signup-form__title{
+    margin-left: 0;
+  }
+  .b-signup-form__button{
+    margin: auto;
+  }
+}  

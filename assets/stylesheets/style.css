@@ -6774,8 +6774,8 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 .g-span12, footer {
   display: inline;
   float: left;
-  width: 97.91667%;
-  margin: 0 1.04167%;
+  width: 100%;
+  margin: 0 0%;
 }
 
 @media (min-width: 980px) {
@@ -6783,93 +6783,93 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   .g-span11 {
     display: inline;
     float: left;
-    width: 89.58333%;
-    margin: 0 1.04167%;
+    width: 91.66667%;
+    margin: 0 0%;
   }
 
   /* line 23, ../sass/style.scss */
   .g-span10, .b-calendar {
     display: inline;
     float: left;
-    width: 81.25%;
-    margin: 0 1.04167%;
+    width: 83.33333%;
+    margin: 0 0%;
   }
 
   /* line 24, ../sass/style.scss */
   .g-span9 {
     display: inline;
     float: left;
-    width: 72.91667%;
-    margin: 0 1.04167%;
+    width: 75%;
+    margin: 0 0%;
   }
 
   /* line 25, ../sass/style.scss */
   .g-span8 {
     display: inline;
     float: left;
-    width: 64.58333%;
-    margin: 0 1.04167%;
+    width: 66.66667%;
+    margin: 0 0%;
   }
 
   /* line 26, ../sass/style.scss */
   .g-span7 {
     display: inline;
     float: left;
-    width: 56.25%;
-    margin: 0 1.04167%;
+    width: 58.33333%;
+    margin: 0 0%;
   }
 
   /* line 27, ../sass/style.scss */
-  .g-span6, .b-signup-form__create-account, .b-signup-form__social {
+  .g-span6 {
     display: inline;
     float: left;
-    width: 47.91667%;
-    margin: 0 1.04167%;
+    width: 50%;
+    margin: 0 0%;
   }
 
   /* line 28, ../sass/style.scss */
   .g-span5 {
     display: inline;
     float: left;
-    width: 39.58333%;
-    margin: 0 1.04167%;
+    width: 41.66667%;
+    margin: 0 0%;
   }
 
   /* line 29, ../sass/style.scss */
   .g-span4, .b-features-col {
     display: inline;
     float: left;
-    width: 31.25%;
-    margin: 0 1.04167%;
+    width: 33.33333%;
+    margin: 0 0%;
   }
 
   /* line 30, ../sass/style.scss */
   .g-span3 {
     display: inline;
     float: left;
-    width: 22.91667%;
-    margin: 0 1.04167%;
+    width: 25%;
+    margin: 0 0%;
   }
 
   /* line 31, ../sass/style.scss */
   .g-span2, .b-calendar__cell, .b-dashboard {
     display: inline;
     float: left;
-    width: 14.58333%;
-    margin: 0 1.04167%;
+    width: 16.66667%;
+    margin: 0 0%;
   }
 
   /* line 32, ../sass/style.scss */
   .g-span1 {
     display: inline;
     float: left;
-    width: 6.25%;
-    margin: 0 1.04167%;
+    width: 8.33333%;
+    margin: 0 0%;
   }
 
   /* line 33, ../sass/style.scss */
   .g-offset6 {
-    margin-left: 51.04167%;
+    margin-left: 50%;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
@@ -6877,93 +6877,93 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   .g-span11 {
     display: inline;
     float: left;
-    width: 89.58333%;
-    margin: 0 1.04167%;
+    width: 91.66667%;
+    margin: 0 0%;
   }
 
   /* line 37, ../sass/style.scss */
   .g-span10, .b-calendar {
     display: inline;
     float: left;
-    width: 81.25%;
-    margin: 0 1.04167%;
+    width: 83.33333%;
+    margin: 0 0%;
   }
 
   /* line 38, ../sass/style.scss */
   .g-span9 {
     display: inline;
     float: left;
-    width: 72.91667%;
-    margin: 0 1.04167%;
+    width: 75%;
+    margin: 0 0%;
   }
 
   /* line 39, ../sass/style.scss */
   .g-span8 {
     display: inline;
     float: left;
-    width: 64.58333%;
-    margin: 0 1.04167%;
+    width: 66.66667%;
+    margin: 0 0%;
   }
 
   /* line 40, ../sass/style.scss */
   .g-span7 {
     display: inline;
     float: left;
-    width: 56.25%;
-    margin: 0 1.04167%;
+    width: 58.33333%;
+    margin: 0 0%;
   }
 
   /* line 41, ../sass/style.scss */
-  .g-span6, .b-signup-form__create-account, .b-signup-form__social {
+  .g-span6 {
     display: inline;
     float: left;
-    width: 47.91667%;
-    margin: 0 1.04167%;
+    width: 50%;
+    margin: 0 0%;
   }
 
   /* line 42, ../sass/style.scss */
   .g-span5 {
     display: inline;
     float: left;
-    width: 39.58333%;
-    margin: 0 1.04167%;
+    width: 41.66667%;
+    margin: 0 0%;
   }
 
   /* line 43, ../sass/style.scss */
   .g-span4, .b-features-col {
     display: inline;
     float: left;
-    width: 31.25%;
-    margin: 0 1.04167%;
+    width: 33.33333%;
+    margin: 0 0%;
   }
 
   /* line 44, ../sass/style.scss */
   .g-span3 {
     display: inline;
     float: left;
-    width: 47.91667%;
-    margin: 0 1.04167%;
+    width: 50%;
+    margin: 0 0%;
   }
 
   /* line 45, ../sass/style.scss */
   .g-span2, .b-calendar__cell, .b-dashboard {
     display: inline;
     float: left;
-    width: 14.58333%;
-    margin: 0 1.04167%;
+    width: 16.66667%;
+    margin: 0 0%;
   }
 
   /* line 46, ../sass/style.scss */
   .g-span1 {
     display: inline;
     float: left;
-    width: 6.25%;
-    margin: 0 1.04167%;
+    width: 8.33333%;
+    margin: 0 0%;
   }
 
   /* line 47, ../sass/style.scss */
   .g-offset6 {
-    margin-left: 51.04167%;
+    margin-left: 50%;
   }
 }
 @media (max-width: 767px) {
@@ -6971,80 +6971,80 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   .g-span11 {
     display: inline;
     float: left;
-    width: 97.91667%;
-    margin: 0 1.04167%;
+    width: 100%;
+    margin: 0 0%;
   }
 
   /* line 52, ../sass/style.scss */
   .g-span10, .b-calendar {
     display: inline;
     float: left;
-    width: 97.91667%;
-    margin: 0 1.04167%;
+    width: 100%;
+    margin: 0 0%;
   }
 
   /* line 53, ../sass/style.scss */
   .g-span9 {
     display: inline;
     float: left;
-    width: 97.91667%;
-    margin: 0 1.04167%;
+    width: 100%;
+    margin: 0 0%;
   }
 
   /* line 54, ../sass/style.scss */
   .g-span8 {
     display: inline;
     float: left;
-    width: 97.91667%;
-    margin: 0 1.04167%;
+    width: 100%;
+    margin: 0 0%;
   }
 
   /* line 55, ../sass/style.scss */
   .g-span7 {
     display: inline;
     float: left;
-    width: 97.91667%;
-    margin: 0 1.04167%;
+    width: 100%;
+    margin: 0 0%;
   }
 
   /* line 56, ../sass/style.scss */
-  .g-span6, .b-signup-form__create-account, .b-signup-form__social {
+  .g-span6 {
     display: inline;
     float: left;
-    width: 97.91667%;
-    margin: 0 1.04167%;
+    width: 100%;
+    margin: 0 0%;
   }
 
   /* line 57, ../sass/style.scss */
   .g-span4, .b-features-col {
     display: inline;
     float: left;
-    width: 97.91667%;
-    margin: 0 1.04167%;
+    width: 100%;
+    margin: 0 0%;
   }
 
   /* line 58, ../sass/style.scss */
   .g-span3 {
     display: inline;
     float: left;
-    width: 97.91667%;
-    margin: 0 1.04167%;
+    width: 100%;
+    margin: 0 0%;
   }
 
   /* line 59, ../sass/style.scss */
   .g-span2, .b-calendar__cell, .b-dashboard {
     display: inline;
     float: left;
-    width: 97.91667%;
-    margin: 0 1.04167%;
+    width: 100%;
+    margin: 0 0%;
   }
 
   /* line 60, ../sass/style.scss */
   .g-span1 {
     display: inline;
     float: left;
-    width: 97.91667%;
-    margin: 0 1.04167%;
+    width: 100%;
+    margin: 0 0%;
   }
 }
 /* END Custom responsive semantic grid */
@@ -9438,13 +9438,18 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   margin-bottom: 40px;
 }
 
+/* line 608, ../sass/style.scss */
+.b-features-col__title, .b-features-col__text {
+  text-align: center;
+}
+
 /* END Features index */
 /* Calendar block */
-/* line 612, ../sass/style.scss */
+/* line 615, ../sass/style.scss */
 .b-calendar__week-row {
   display: block;
-  width: 102.5%;
-  margin: 0 -1.25%;
+  width: 100%;
+  margin: 0 0%;
   *zoom: 1;
 }
 /* line 15, ../sass/bootstrap/_mixins.scss */
@@ -9462,26 +9467,51 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /* Dashboard block */
 /* END Dashboard block */
 /*------------ Sign up page ------------- */
-/* line 623, ../sass/style.scss */
+/* line 624, ../sass/style.scss */
+.b-singnup-body {
+  background-color: #BDAEC6;
+}
+
+/* line 629, ../sass/style.scss */
 .b-signup-form {
-  width: 650px;
-  margin: auto;
-  border: 2px solid black;
+  display: inline;
+  float: left;
+  width: 50%;
+  margin: 0 0%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 2px solid #9C8AA5;
   overflow: hidden;
 }
 
-/* line 638, ../sass/style.scss */
+/* line 636, ../sass/style.scss */
+.b-signup-form__create-account {
+  display: inline;
+  float: left;
+  width: 50%;
+  margin: 0 0%;
+}
+
+/* line 641, ../sass/style.scss */
+.b-signup-form__social {
+  display: inline;
+  float: left;
+  width: 50%;
+  margin: 0 0%;
+}
+
+/* line 645, ../sass/style.scss */
 .b-signup-form__title, .b-signup-form__input-group, .b-signup-form__button {
   margin-top: 10px;
   margin-left: 20px;
 }
 
-/* line 642, ../sass/style.scss */
+/* line 649, ../sass/style.scss */
 .b-signup-form__title {
   font-size: 20px;
 }
 
-/* line 648, ../sass/style.scss */
+/* line 655, ../sass/style.scss */
 .b-signup-form__button {
   font-size: 14px;
   margin-top: 20px;
@@ -9491,7 +9521,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   text-shadow: none;
 }
 
-/* line 658, ../sass/style.scss */
+/* line 665, ../sass/style.scss */
 .b-signup-form__button:hover, .b-signup-form__button:active, .b-signup-form__button:focus {
   background-color: #caa91e;
   border-color: #caa91e;
@@ -9500,3 +9530,56 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /*---------- END Sign up page ----------- */
 /* Footer */
 /* END Footer */
+/* Responsiveness */
+@media (min-width: 768px) and (max-width: 1033px) {
+  /* line 679, ../sass/style.scss */
+  .b-signup-form {
+    display: inline;
+    float: left;
+    width: 66.66667%;
+    margin: 0 0%;
+    margin-left: 16.66667%;
+    margin-right: 16.66667%;
+  }
+}
+@media (min-width: 585px) and (max-width: 767px) {
+  /* line 686, ../sass/style.scss */
+  .b-signup-form {
+    display: inline;
+    float: left;
+    width: 83.33333%;
+    margin: 0 0%;
+    margin-left: 8.33333%;
+    margin-right: 8.33333%;
+  }
+}
+@media (max-width: 584px) {
+  /* line 693, ../sass/style.scss */
+  .b-singnup-body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* line 697, ../sass/style.scss */
+  .b-signup-form, .b-signup-form__create-account, .b-signup-form__social {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 0%;
+  }
+
+  /* line 700, ../sass/style.scss */
+  .b-signup-form__create-account, .b-signup-form__social {
+    text-align: center;
+  }
+
+  /* line 703, ../sass/style.scss */
+  .b-signup-form__input-group, .b-signup-form__title {
+    margin-left: 0;
+  }
+
+  /* line 706, ../sass/style.scss */
+  .b-signup-form__button {
+    margin: auto;
+  }
+}

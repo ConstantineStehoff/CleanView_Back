@@ -25,7 +25,7 @@
 
   <body class="b-singnup-body">
     <h1 style="text-align: center; margin-top: 20px; margin-bottom: 20px;">LOGO</h1>
-    <div class="b-signup-form">
+    <div class="b-signup-form" style="background-color: white;">
       
         <div class="b-signup-form__create-account">
           <h2 class="b-signup-form__title">Create an Account</h2>
