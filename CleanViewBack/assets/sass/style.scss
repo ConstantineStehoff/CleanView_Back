@@ -2,6 +2,52 @@
 @import "bootstrap/bootstrap";
 @import "bootstrap/responsive";
 
+/* Custom font */
+//Arsenal
+@font-face {
+    font-family: 'arsenal';
+    src: url('../font/arsenal/arsenal-bold-webfont.eot');
+    src: url('../font/arsenal/arsenal-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/arsenal/arsenal-bold-webfont.woff') format('woff'),
+         url('../font/arsenal/arsenal-bold-webfont.ttf') format('truetype'),
+         url('../font/arsenal/arsenal-bold-webfont.svg#arsenalbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+//CartoGothic-Std
+@font-face {
+    font-family: 'cartogothic_stdbold';
+    src: url('../font/CartoGothic-Std/cartogothicstd-bold-webfont.eot');
+    src: url('../font/CartoGothic-Std/cartogothicstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/CartoGothic-Std/cartogothicstd-bold-webfont.woff') format('woff'),
+         url('../font/CartoGothic-Std/cartogothicstd-bold-webfont.ttf') format('truetype'),
+         url('../font/CartoGothic-Std/cartogothicstd-bold-webfont.svg#cartogothic_stdbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cartogothic_stdbold_italic';
+    src: url('../font/CartoGothic-Std/cartogothicstd-bolditalic-webfont.eot');
+    src: url('../font/CartoGothic-Std/cartogothicstd-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/CartoGothic-Std/cartogothicstd-bolditalic-webfont.woff') format('woff'),
+         url('../font/CartoGothic-Std/cartogothicstd-bolditalic-webfont.ttf') format('truetype'),
+         url('../font/CartoGothic-Std/cartogothicstd-bolditalic-webfont.svg#cartogothic_stdbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'cartogothic_stdregular';
+    src: url('../font/CartoGothic-Std/cartogothicstd-book-webfont.eot');
+    src: url('../font/CartoGothic-Std/cartogothicstd-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/CartoGothic-Std/cartogothicstd-book-webfont.woff') format('woff'),
+         url('../font/CartoGothic-Std/cartogothicstd-book-webfont.ttf') format('truetype'),
+         url('../font/CartoGothic-Std/cartogothicstd-book-webfont.svg#cartogothic_stdregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* Custom responsive semantic grid */
 //////////
@@ -513,7 +559,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   margin: 0 auto;
   max-width: 1000px;
 }
-.b-main{@extend .g-container;}
+
 .g-input{
   border-width: 2px !important; 
   webkit-box-shadow: none; 
@@ -525,34 +571,40 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /* Header */
 .b-header{
   padding-top: 40px;
-  background-color: white;
-  margin-left: 20px;
-  margin-right: 20px;
+  //background-color: $clouds;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .b-header__logo{
   @extend .pull-left;
   font-size: 25px;
   line-height: 30px;
   margin-top: 0;
+  margin-left: 20px;
+  color: $plump;
 }
 .b-login-form{
   @extend .form-horizontal; 
   @extend .pull-right;
+  margin-right: 20px;
 }
 .b-login-form__email, .b-login-form__password{
   @extend .input-medium;
   @extend .g-input;
 }
+.b-login-form__email:focus, .b-login-form__password:focus{
+  border-color: $plump !important;
+}
 .b-login-form__button{
   @extend .btn;
   color: white;
-  background-color: $medium-blue;
-  border-color: $medium-blue;
+  background-color: $plump;
+  border-color: $plump;
 }
 .b-login-form__button:hover, .b-login-form__button:active, .b-login-form__button:focus{
   color: white;
-  background-color: $medium-blue;
-  border-color: $medium-blue;
+  background-color: $plump;
+  border-color: $plump;
 }
 .b-login-form__rmbr-label{
   @extend .checkbox;
@@ -568,8 +620,12 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 /* Signup main */
 .b-signup{
-  background-color: $plump;
-  color: white;
+  background: url('../images/patterns/shattered.png') repeat;
+  color: $white;
+  margin: auto;
+}
+.b-signup__overlay{
+  background-color: rgba(91,59,112, 0.7);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -581,6 +637,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 .b-signup__logo{
   font-size: 100px;
   line-height: 1;
+  color: $white;
 }
 .b-signup__lead{
   @extend .lead;
@@ -603,22 +660,38 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 /* END Signup main */
 
+//.b-main{@extend .g-container;}
 .b-main{
-  padding-left: 20px;
-  padding-right: 20px;
+  //background-color: $plump;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  //color: $white;
+  //max-width: 1000px;
+  margin: auto;
+  height: auto;
+  overflow: hidden;
 }
 
 /* Features index */
 .b-features{
-  
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 .b-features-col{
   @extend .g-span4;
   margin-top: 40px;
   margin-bottom: 40px;
+  font-size: 16px;
 }
 .b-features-col__title, .b-features-col__text{
   text-align: center;
+}
+.b-features-col__text{
+  padding-left: 10px;
+  padding-right: 10px;
 }
 /* END Features index */
 
@@ -721,3 +794,18 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     margin-top: 20px;
   }
 }  
+
+/* footer */
+.b-footer{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.b-footer__container{
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* SVG icons */
+.b-calendar-icon{
+  color: $plump;
+}

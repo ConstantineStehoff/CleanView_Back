@@ -24,30 +24,26 @@
   </head>
 
   <body class="b-singnup-body">
-    <h1 style="text-align: center; margin-top: 20px; margin-bottom: 20px;">LOGO</h1>
+    <h1 style="text-align: center; margin-top: 20px; margin-bottom: 20px;">PeerCal</h1>
     <div class="b-signup-form" style="background-color: white;">
       
         <div class="b-signup-form__create-account">
           <h2 class="b-signup-form__title">Create an Account</h2>
           <form>
             <div class="b-signup-form__input-group">
-              <label class="control-label">Name</label>
-              <input type="text" class="b-signup-form__name" placeholder="e.g., Jane Doe">
+              <input type="text" class="b-signup-form__name" placeholder="Name">
             </div>  
             
             <div class="b-signup-form__input-group">
-              <label class="control-label">Email</label>
-              <input type="text" class="b-signup-form__email" placeholder="e.g., jd@doe.net">
+              <input type="text" class="b-signup-form__email" placeholder="Email">
             </div>
             
             <div class="b-signup-form__input-group">
-              <label class="control-label">Password</label>
-              <input type="password" class="b-signup-form__password" placeholder="e.g., *********">
+              <input type="password" class="b-signup-form__password" placeholder="Password">
             </div>  
               
             <div class="b-signup-form__input-group">
-              <label class="control-label">Confirm Password</label>
-              <input type="password" class="b-signup-form__password-confirm" placeholder="e.g., *********">
+              <input type="password" class="b-signup-form__password-confirm" placeholder="Confirm Password">
             </div>  
               
             <button type="submit" class="b-signup-form__button">Create an Account</button>
