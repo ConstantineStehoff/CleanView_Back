@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Template &middot; Bootstrap</title>
+    <title>PeerCalendar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -24,12 +23,12 @@
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
-  <body>
+  <body class="b-body b-body--index">
 	
 	<div class="b-header">
 		<div class="g-container">
 			
-			<h1 class="b-header__logo">PeerCal</h1>
+			<h1 class="b-header__logo">PeerCalendar</h1>
 				
 			<form class="b-login-form">
 				<input type="text" class="b-login-form__email" placeholder="Email">
@@ -51,7 +50,7 @@
       <div class="g-container">		
         
         <div class="b-signup__main">
-  		    <h1 class="b-signup__logo">PeerCal</h1>
+  		    <h1 class="b-signup__logo">PeerCalendar</h1>
   		      <p class="b-signup__lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
   		      <a class="b-signup__button" href="sign_up.php">Sign up today</a>
   	    </div>
@@ -116,8 +115,8 @@
     </div> <!-- /b-main -->
       
     <div class="b-footer g-span12">
-      <div class="b-footer__container">
-        <p>&copy; Company 2013</p>
+      <div class="b-footer__container b-footer__container--auto">
+        <p>&copy; PeerCal 2013</p>
       </div>  
     </div>
 

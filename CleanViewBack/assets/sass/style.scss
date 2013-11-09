@@ -568,12 +568,18 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 /* END Other stuff */
 
+.b-body--index{
+  background-color: $clouds;
+}
+
 /* Header */
 .b-header{
   padding-top: 40px;
-  //background-color: $clouds;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: $clouds;//#FCF7FF;
+  //max-width: 1000px;
+  //margin: auto;
 }
 .b-header__logo{
   @extend .pull-left;
@@ -623,6 +629,8 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   background: url('../images/patterns/shattered.png') repeat;
   color: $white;
   margin: auto;
+  border-top: 2px solid $silver;
+  border-bottom: 2px solid $silver;
 }
 .b-signup__overlay{
   background-color: rgba(91,59,112, 0.7);
@@ -662,7 +670,9 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 //.b-main{@extend .g-container;}
 .b-main{
-  //background-color: $plump;
+  //background-color: #241649;
+  background-color: $clouds;
+  //opacity: 0.9;
   padding-top: 20px;
   padding-bottom: 20px;
   //color: $white;
@@ -706,25 +716,32 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /* END Dashboard block */
 
 /*------------ Sign up page ------------- */
-.b-singnup-body{
+.b-body--signup, .b-body--add-classes{
   background-color: #e6e6e6;
   //background-color: #BDAEC6;
+}
+.b-signup-page-logo{
+  text-align: center; 
+  margin-top: 20px; 
+  margin-bottom: 20px;
+  color: $plump;
 }
 .b-signup-form{
   @include column(6);
   @include push(3);
   @include pull(3);
-  border: 2px solid #E2E3D9; //#9C8AA5
+  border: 2px solid #E2E3D9;
   overflow:hidden;
+  background-color: white;
 }
-.b-signup-form__create-account{
+.b-footer__container--signup-form{
   @include column(6);
-  //text-align: center;
-  //background-color: green;
-}
-.b-signup-form__social{
+  @include push(3);
+  @include pull(3);
+  margin-top: 20px;
+}  
+.b-signup-form__create-account, .b-signup-form__social{
   @include column(6);
-  //background-color: red;
 }
 .b-signup-form__title, .b-signup-form__input-group, .b-signup-form__button{
   margin-top: 10px; 
@@ -732,6 +749,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 .b-signup-form__title{
   font-size: 20px;
+  font-weight: normal;
 }
 .b-signup-form__name, .b-signup-form__email, .b-signup-form__password, .b-signup-form__password-confirm{
   @extend .g-input;
@@ -739,7 +757,6 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 .b-signup-form__button{
   @extend .btn;
   font-size: 14px;
-  margin-top: 20px;
   background-color: $gold;
   border-color: $gold;
   display: block;
@@ -752,8 +769,107 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 .b-signup-form__name:focus, .b-signup-form__email:focus, .b-signup-form__password:focus, .b-signup-form__password-confirm:focus{
   border-color: $plump !important;
 }
-
 /*---------- END Sign up page ----------- */
+
+/*---------- Add classes page ----------- */
+.b-addclasses-form__progress{
+  margin-top: 30px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  border: 2px solid #e6e6e6;
+  /*CSS counters to number the steps*/
+  @include column(8);
+  @include push(2);
+  @include pull(2);
+}
+.b-addclasses-form__progress-item{
+  list-style-type: none;
+  font-size: 16px;
+  width: 33.33%;
+  text-align: center;
+  float: left;
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.b-addclasses-form__progress-item--active{
+  background-color: $plump;
+  color: white;
+}
+.b-addclasses-form__add-school, .b-addclasses-form__add-major, .b-addclasses-form__add-classes{
+  @include column(8);
+  @include push(2);
+  @include pull(2);
+  border: 2px solid #E2E3D9;
+  overflow:hidden;
+  background-color: white;
+}
+.b-addclasses-form__school-dash{
+  @include column(4);
+}
+.b-addclasses-form__school-list{
+  @include column(8);
+
+}
+.b-addclasses-form__title{
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+}
+.b-addclasses-form__title, .b-addclasses-form__input-group, .b-addclasses-form__button{
+  margin-top: 10px; 
+  margin-left: 20px;
+}
+.b-addclasses-form__label{
+  margin-bottom: 10px;
+}
+.b-addclasses-form__school, .b-addclasses-form__major, .b-addclasses-form__classes{
+  @extend .g-input;
+}
+.b-addclasses-form__school:focus, .b-addclasses-form__major:focus, .b-addclasses-form__classes:focus{
+  border-color: $plump !important;
+} 
+.b-school-list{
+  list-style-type: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 300px;
+  overflow: auto;
+}
+.b-school-list__item-img, .b-school-list__item-title, .b-school-list__item-btn{
+  display: inline;
+} 
+.b-school-list__item{
+  margin-bottom: 5px;
+  padding: 0;
+  margin-top: 0;
+}
+.b-school-list__item-img{
+  margin-bottom: 5px; 
+}
+.b-school-list__item-title{
+  font-size: 14px;
+  font-weight: normal;
+}
+.b-school-list__item-btn{
+  @extend .btn;
+  background-color: white;
+  border-color: $grayCustom;
+  color: $plump;
+  display: block;
+  text-shadow: none;
+  font-size: 14px;
+  float: right;
+  margin-top: 9px;
+  margin-right: 20px;
+  @include transition(all .3s ease);
+}
+.b-school-list__item-btn:hover, .b-school-list__item-btn:focus{
+  background-color: $plump;
+  border-color: $plump;
+  color: white;
+}
+/*-------- END Add classes page --------- */
 
 /* Footer */
 	footer{@extend .g-span12;}
@@ -762,28 +878,34 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 /* Responsiveness */
 @media (min-width: 768px) and (max-width: 1033px) { 
-  .b-signup-form{
+  .b-signup-form, .b-footer__container--signup-form{
     @include column(8);
     @include push(2);
     @include pull(2);
+  }
+  .b-footer__container--signup-form{
+    margin-top: 20px;
   }  
 }
 @media (min-width: 585px) and (max-width: 767px) { 
-  .b-signup-form{
+  .b-signup-form, .b-footer__container--signup-form {
     @include column(10);
     @include push(1);
     @include pull(1);
-  }  
+  }
+  .b-footer__container--signup-form{
+    margin-top: 20px;
+  }   
 }
 @media (max-width: 584px){
-  .b-singnup-body{
+  .b-body--signup{
     padding-left: 20px;
     padding-right: 20px;
   }
-  .b-signup-form, .b-signup-form__create-account, .b-signup-form__social{
+  .b-signup-form, .b-signup-form__create-account, .b-signup-form__social, .b-footer__container--signup-form{
     @include column(12);
   }
-  .b-signup-form__create-account, .b-signup-form__social{
+  .b-signup-form__create-account, .b-signup-form__social, .b-footer__container--signup-form{
     text-align: center;
   }
   .b-signup-form__input-group, .b-signup-form__title{
@@ -793,6 +915,9 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     margin: auto;
     margin-top: 20px;
   }
+  .b-footer__container--signup-form{
+    margin-top: 20px;
+  } 
 }  
 
 /* footer */
@@ -802,6 +927,8 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 .b-footer__container{
   max-width: 1000px;
+}
+.b-footer__container--auto{
   margin: auto;
 }
 

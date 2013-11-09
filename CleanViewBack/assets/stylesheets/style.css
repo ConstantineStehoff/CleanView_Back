@@ -1521,12 +1521,14 @@ select:focus:invalid:focus {
 .input-append .b-login-form__button,
 .input-append .b-signup__button,
 .input-append .b-signup-form__button,
+.input-append .b-school-list__item-btn,
 .input-append .btn-group > .dropdown-toggle,
 .input-prepend .add-on,
 .input-prepend .btn,
 .input-prepend .b-login-form__button,
 .input-prepend .b-signup__button,
 .input-prepend .b-signup-form__button,
+.input-prepend .b-school-list__item-btn,
 .input-prepend .btn-group > .dropdown-toggle {
   vertical-align: top;
   -webkit-border-radius: 0;
@@ -1545,7 +1547,8 @@ select:focus:invalid:focus {
 .input-prepend .btn,
 .input-prepend .b-login-form__button,
 .input-prepend .b-signup__button,
-.input-prepend .b-signup-form__button {
+.input-prepend .b-signup-form__button,
+.input-prepend .b-school-list__item-btn {
   margin-right: -1px;
 }
 /* line 484, ../sass/bootstrap/_forms.scss */
@@ -1553,7 +1556,8 @@ select:focus:invalid:focus {
 .input-prepend .btn:first-child,
 .input-prepend .b-login-form__button:first-child,
 .input-prepend .b-signup__button:first-child,
-.input-prepend .b-signup-form__button:first-child {
+.input-prepend .b-signup-form__button:first-child,
+.input-prepend .b-school-list__item-btn:first-child {
   -webkit-border-radius: 0 0 0 0;
   -moz-border-radius: 0 0 0 0;
   border-radius: 0 0 0 0;
@@ -1568,15 +1572,17 @@ select:focus:invalid:focus {
   border-radius: 0 0 0 0;
 }
 /* line 495, ../sass/bootstrap/_forms.scss */
-.input-append input + .btn-group .btn:last-child, .input-append input + .btn-group .b-login-form__button:last-child, .input-append input + .btn-group .b-signup__button:last-child, .input-append input + .btn-group .b-signup-form__button:last-child,
+.input-append input + .btn-group .btn:last-child, .input-append input + .btn-group .b-login-form__button:last-child, .input-append input + .btn-group .b-signup__button:last-child, .input-append input + .btn-group .b-signup-form__button:last-child, .input-append input + .btn-group .b-school-list__item-btn:last-child,
 .input-append select + .btn-group .btn:last-child,
 .input-append select + .btn-group .b-login-form__button:last-child,
 .input-append select + .btn-group .b-signup__button:last-child,
 .input-append select + .btn-group .b-signup-form__button:last-child,
+.input-append select + .btn-group .b-school-list__item-btn:last-child,
 .input-append .uneditable-input + .btn-group .btn:last-child,
 .input-append .uneditable-input + .btn-group .b-login-form__button:last-child,
 .input-append .uneditable-input + .btn-group .b-signup__button:last-child,
-.input-append .uneditable-input + .btn-group .b-signup-form__button:last-child {
+.input-append .uneditable-input + .btn-group .b-signup-form__button:last-child,
+.input-append .uneditable-input + .btn-group .b-school-list__item-btn:last-child {
   -webkit-border-radius: 0 0 0 0;
   -moz-border-radius: 0 0 0 0;
   border-radius: 0 0 0 0;
@@ -1587,6 +1593,7 @@ select:focus:invalid:focus {
 .input-append .b-login-form__button,
 .input-append .b-signup__button,
 .input-append .b-signup-form__button,
+.input-append .b-school-list__item-btn,
 .input-append .btn-group {
   margin-left: -1px;
 }
@@ -1596,6 +1603,7 @@ select:focus:invalid:focus {
 .input-append .b-login-form__button:last-child,
 .input-append .b-signup__button:last-child,
 .input-append .b-signup-form__button:last-child,
+.input-append .b-school-list__item-btn:last-child,
 .input-append .btn-group:last-child > .dropdown-toggle {
   -webkit-border-radius: 0 0 0 0;
   -moz-border-radius: 0 0 0 0;
@@ -1611,15 +1619,17 @@ select:focus:invalid:focus {
   border-radius: 0;
 }
 /* line 517, ../sass/bootstrap/_forms.scss */
-.input-prepend.input-append input + .btn-group .btn, .input-prepend.input-append input + .btn-group .b-login-form__button, .input-prepend.input-append input + .btn-group .b-signup__button, .input-prepend.input-append input + .btn-group .b-signup-form__button,
+.input-prepend.input-append input + .btn-group .btn, .input-prepend.input-append input + .btn-group .b-login-form__button, .input-prepend.input-append input + .btn-group .b-signup__button, .input-prepend.input-append input + .btn-group .b-signup-form__button, .input-prepend.input-append input + .btn-group .b-school-list__item-btn,
 .input-prepend.input-append select + .btn-group .btn,
 .input-prepend.input-append select + .btn-group .b-login-form__button,
 .input-prepend.input-append select + .btn-group .b-signup__button,
 .input-prepend.input-append select + .btn-group .b-signup-form__button,
+.input-prepend.input-append select + .btn-group .b-school-list__item-btn,
 .input-prepend.input-append .uneditable-input + .btn-group .btn,
 .input-prepend.input-append .uneditable-input + .btn-group .b-login-form__button,
 .input-prepend.input-append .uneditable-input + .btn-group .b-signup__button,
-.input-prepend.input-append .uneditable-input + .btn-group .b-signup-form__button {
+.input-prepend.input-append .uneditable-input + .btn-group .b-signup-form__button,
+.input-prepend.input-append .uneditable-input + .btn-group .b-school-list__item-btn {
   -webkit-border-radius: 0 0 0 0;
   -moz-border-radius: 0 0 0 0;
   border-radius: 0 0 0 0;
@@ -1629,7 +1639,8 @@ select:focus:invalid:focus {
 .input-prepend.input-append .btn:first-child,
 .input-prepend.input-append .b-login-form__button:first-child,
 .input-prepend.input-append .b-signup__button:first-child,
-.input-prepend.input-append .b-signup-form__button:first-child {
+.input-prepend.input-append .b-signup-form__button:first-child,
+.input-prepend.input-append .b-school-list__item-btn:first-child {
   margin-right: -1px;
   -webkit-border-radius: 0 0 0 0;
   -moz-border-radius: 0 0 0 0;
@@ -1640,7 +1651,8 @@ select:focus:invalid:focus {
 .input-prepend.input-append .btn:last-child,
 .input-prepend.input-append .b-login-form__button:last-child,
 .input-prepend.input-append .b-signup__button:last-child,
-.input-prepend.input-append .b-signup-form__button:last-child {
+.input-prepend.input-append .b-signup-form__button:last-child,
+.input-prepend.input-append .b-school-list__item-btn:last-child {
   margin-left: -1px;
   -webkit-border-radius: 0 0 0 0;
   -moz-border-radius: 0 0 0 0;
@@ -1681,7 +1693,7 @@ input.search-query {
 }
 
 /* line 559, ../sass/bootstrap/_forms.scss */
-.form-search .input-append .btn, .form-search .input-append .b-login-form__button, .form-search .input-append .b-signup__button, .form-search .input-append .b-signup-form__button {
+.form-search .input-append .btn, .form-search .input-append .b-login-form__button, .form-search .input-append .b-signup__button, .form-search .input-append .b-signup-form__button, .form-search .input-append .b-school-list__item-btn {
   -webkit-border-radius: 0 14px 14px 0;
   -moz-border-radius: 0 14px 14px 0;
   border-radius: 0 14px 14px 0;
@@ -1695,7 +1707,7 @@ input.search-query {
 }
 
 /* line 565, ../sass/bootstrap/_forms.scss */
-.form-search .input-prepend .btn, .form-search .input-prepend .b-login-form__button, .form-search .input-prepend .b-signup__button, .form-search .input-prepend .b-signup-form__button {
+.form-search .input-prepend .btn, .form-search .input-prepend .b-login-form__button, .form-search .input-prepend .b-signup__button, .form-search .input-prepend .b-signup-form__button, .form-search .input-prepend .b-school-list__item-btn {
   -webkit-border-radius: 14px 0 0 14px;
   -moz-border-radius: 14px 0 0 14px;
   border-radius: 14px 0 0 14px;
@@ -3224,7 +3236,7 @@ button.close {
 }
 
 /* line 10, ../sass/bootstrap/_buttons.scss */
-.btn, .b-login-form__button, .b-signup__button, .b-signup-form__button {
+.btn, .b-login-form__button, .b-signup__button, .b-signup-form__button, .b-school-list__item-btn {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
@@ -3263,21 +3275,21 @@ button.close {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 502, ../sass/bootstrap/_mixins.scss */
-.btn:hover, .b-login-form__button:hover, .b-signup__button:hover, .b-signup-form__button:hover, .btn:focus, .b-login-form__button:focus, .b-signup__button:focus, .b-signup-form__button:focus, .btn:active, .b-login-form__button:active, .b-signup__button:active, .b-signup-form__button:active, .btn.active, .active.b-login-form__button, .active.b-signup__button, .active.b-signup-form__button, .btn.disabled, .disabled.b-login-form__button, .disabled.b-signup__button, .disabled.b-signup-form__button, .btn[disabled], [disabled].b-login-form__button, [disabled].b-signup__button, [disabled].b-signup-form__button {
+.btn:hover, .b-login-form__button:hover, .b-signup__button:hover, .b-signup-form__button:hover, .b-school-list__item-btn:hover, .btn:focus, .b-login-form__button:focus, .b-signup__button:focus, .b-signup-form__button:focus, .b-school-list__item-btn:focus, .btn:active, .b-login-form__button:active, .b-signup__button:active, .b-signup-form__button:active, .b-school-list__item-btn:active, .btn.active, .active.b-login-form__button, .active.b-signup__button, .active.b-signup-form__button, .active.b-school-list__item-btn, .btn.disabled, .disabled.b-login-form__button, .disabled.b-signup__button, .disabled.b-signup-form__button, .disabled.b-school-list__item-btn, .btn[disabled], [disabled].b-login-form__button, [disabled].b-signup__button, [disabled].b-signup-form__button, [disabled].b-school-list__item-btn {
   color: #333333;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
 /* line 510, ../sass/bootstrap/_mixins.scss */
-.btn:active, .b-login-form__button:active, .b-signup__button:active, .b-signup-form__button:active, .btn.active, .active.b-login-form__button, .active.b-signup__button, .active.b-signup-form__button {
+.btn:active, .b-login-form__button:active, .b-signup__button:active, .b-signup-form__button:active, .b-school-list__item-btn:active, .btn.active, .active.b-login-form__button, .active.b-signup__button, .active.b-signup-form__button, .active.b-school-list__item-btn {
   background-color: #cccccc \9;
 }
 /* line 61, ../sass/bootstrap/_mixins.scss */
-.btn:first-child, .b-login-form__button:first-child, .b-signup__button:first-child, .b-signup-form__button:first-child {
+.btn:first-child, .b-login-form__button:first-child, .b-signup__button:first-child, .b-signup-form__button:first-child, .b-school-list__item-btn:first-child {
   *margin-left: 0;
 }
 /* line 30, ../sass/bootstrap/_buttons.scss */
-.btn:hover, .b-login-form__button:hover, .b-signup__button:hover, .b-signup-form__button:hover, .btn:focus, .b-login-form__button:focus, .b-signup__button:focus, .b-signup-form__button:focus {
+.btn:hover, .b-login-form__button:hover, .b-signup__button:hover, .b-signup-form__button:hover, .b-school-list__item-btn:hover, .btn:focus, .b-login-form__button:focus, .b-signup__button:focus, .b-signup-form__button:focus, .b-school-list__item-btn:focus {
   color: #333333;
   text-decoration: none;
   background-position: 0 -15px;
@@ -3287,13 +3299,13 @@ button.close {
   transition: background-position 0.1s linear;
 }
 /* line 41, ../sass/bootstrap/_buttons.scss */
-.btn:focus, .b-login-form__button:focus, .b-signup__button:focus, .b-signup-form__button:focus {
+.btn:focus, .b-login-form__button:focus, .b-signup__button:focus, .b-signup-form__button:focus, .b-school-list__item-btn:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 /* line 47, ../sass/bootstrap/_buttons.scss */
-.btn.active, .active.b-login-form__button, .active.b-signup__button, .active.b-signup-form__button, .btn:active, .b-login-form__button:active, .b-signup__button:active, .b-signup-form__button:active {
+.btn.active, .active.b-login-form__button, .active.b-signup__button, .active.b-signup-form__button, .active.b-school-list__item-btn, .btn:active, .b-login-form__button:active, .b-signup__button:active, .b-signup-form__button:active, .b-school-list__item-btn:active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -3301,7 +3313,7 @@ button.close {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 55, ../sass/bootstrap/_buttons.scss */
-.btn.disabled, .disabled.b-login-form__button, .disabled.b-signup__button, .disabled.b-signup-form__button, .btn[disabled], [disabled].b-login-form__button, [disabled].b-signup__button, [disabled].b-signup-form__button {
+.btn.disabled, .disabled.b-login-form__button, .disabled.b-signup__button, .disabled.b-signup-form__button, .disabled.b-school-list__item-btn, .btn[disabled], [disabled].b-login-form__button, [disabled].b-signup__button, [disabled].b-signup-form__button, [disabled].b-school-list__item-btn {
   cursor: default;
   background-image: none;
   opacity: 0.65;
@@ -3565,47 +3577,52 @@ input[type="button"].btn-block {
 }
 
 /* line 174, ../sass/bootstrap/_buttons.scss */
-button.btn, button.b-login-form__button, button.b-signup__button, button.b-signup-form__button,
+button.btn, button.b-login-form__button, button.b-signup__button, button.b-signup-form__button, button.b-school-list__item-btn,
 input[type="submit"].btn,
 input[type="submit"].b-login-form__button,
 input[type="submit"].b-signup__button,
-input[type="submit"].b-signup-form__button {
+input[type="submit"].b-signup-form__button,
+input[type="submit"].b-school-list__item-btn {
   *padding-top: 3px;
   *padding-bottom: 3px;
 }
 /* line 177, ../sass/bootstrap/_buttons.scss */
-button.btn::-moz-focus-inner, button.b-login-form__button::-moz-focus-inner, button.b-signup__button::-moz-focus-inner, button.b-signup-form__button::-moz-focus-inner,
+button.btn::-moz-focus-inner, button.b-login-form__button::-moz-focus-inner, button.b-signup__button::-moz-focus-inner, button.b-signup-form__button::-moz-focus-inner, button.b-school-list__item-btn::-moz-focus-inner,
 input[type="submit"].btn::-moz-focus-inner,
 input[type="submit"].b-login-form__button::-moz-focus-inner,
 input[type="submit"].b-signup__button::-moz-focus-inner,
-input[type="submit"].b-signup-form__button::-moz-focus-inner {
+input[type="submit"].b-signup-form__button::-moz-focus-inner,
+input[type="submit"].b-school-list__item-btn::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 /* line 186, ../sass/bootstrap/_buttons.scss */
-button.btn.btn-large, button.btn-large.b-login-form__button, button.b-login-form__button.b-signup__button, button.b-signup__button, button.btn-large.b-signup-form__button, button.b-signup-form__button.b-signup__button,
+button.btn.btn-large, button.btn-large.b-login-form__button, button.b-login-form__button.b-signup__button, button.b-signup__button, button.btn-large.b-signup-form__button, button.b-signup-form__button.b-signup__button, button.btn-large.b-school-list__item-btn, button.b-school-list__item-btn.b-signup__button,
 input[type="submit"].btn.btn-large,
 input[type="submit"].btn-large.b-login-form__button,
 input[type="submit"].b-signup__button,
-input[type="submit"].btn-large.b-signup-form__button {
+input[type="submit"].btn-large.b-signup-form__button,
+input[type="submit"].btn-large.b-school-list__item-btn {
   *padding-top: 7px;
   *padding-bottom: 7px;
 }
 /* line 190, ../sass/bootstrap/_buttons.scss */
-button.btn.btn-small, button.btn-small.b-login-form__button, button.btn-small.b-signup__button, button.btn-small.b-signup-form__button,
+button.btn.btn-small, button.btn-small.b-login-form__button, button.btn-small.b-signup__button, button.btn-small.b-signup-form__button, button.btn-small.b-school-list__item-btn,
 input[type="submit"].btn.btn-small,
 input[type="submit"].btn-small.b-login-form__button,
 input[type="submit"].btn-small.b-signup__button,
-input[type="submit"].btn-small.b-signup-form__button {
+input[type="submit"].btn-small.b-signup-form__button,
+input[type="submit"].btn-small.b-school-list__item-btn {
   *padding-top: 3px;
   *padding-bottom: 3px;
 }
 /* line 194, ../sass/bootstrap/_buttons.scss */
-button.btn.btn-mini, button.btn-mini.b-login-form__button, button.btn-mini.b-signup__button, button.btn-mini.b-signup-form__button,
+button.btn.btn-mini, button.btn-mini.b-login-form__button, button.btn-mini.b-signup__button, button.btn-mini.b-signup-form__button, button.btn-mini.b-school-list__item-btn,
 input[type="submit"].btn.btn-mini,
 input[type="submit"].btn-mini.b-login-form__button,
 input[type="submit"].btn-mini.b-signup__button,
-input[type="submit"].btn-mini.b-signup-form__button {
+input[type="submit"].btn-mini.b-signup-form__button,
+input[type="submit"].btn-mini.b-school-list__item-btn {
   *padding-top: 1px;
   *padding-bottom: 1px;
 }
@@ -3675,20 +3692,22 @@ input[type="submit"].btn-mini.b-signup-form__button {
   margin-bottom: 10px;
 }
 /* line 29, ../sass/bootstrap/_button-groups.scss */
-.btn-toolbar > .btn + .btn, .btn-toolbar > .b-login-form__button + .btn, .btn-toolbar > .b-signup__button + .btn, .btn-toolbar > .b-signup-form__button + .btn, .btn-toolbar > .btn + .b-login-form__button, .btn-toolbar > .b-login-form__button + .b-login-form__button, .btn-toolbar > .b-signup__button + .b-login-form__button, .btn-toolbar > .b-signup-form__button + .b-login-form__button, .btn-toolbar > .btn + .b-signup__button, .btn-toolbar > .b-login-form__button + .b-signup__button, .btn-toolbar > .b-signup__button + .b-signup__button, .btn-toolbar > .b-signup-form__button + .b-signup__button, .btn-toolbar > .btn + .b-signup-form__button, .btn-toolbar > .b-login-form__button + .b-signup-form__button, .btn-toolbar > .b-signup__button + .b-signup-form__button, .btn-toolbar > .b-signup-form__button + .b-signup-form__button,
+.btn-toolbar > .btn + .btn, .btn-toolbar > .b-login-form__button + .btn, .btn-toolbar > .b-signup__button + .btn, .btn-toolbar > .b-signup-form__button + .btn, .btn-toolbar > .b-school-list__item-btn + .btn, .btn-toolbar > .btn + .b-login-form__button, .btn-toolbar > .b-login-form__button + .b-login-form__button, .btn-toolbar > .b-signup__button + .b-login-form__button, .btn-toolbar > .b-signup-form__button + .b-login-form__button, .btn-toolbar > .b-school-list__item-btn + .b-login-form__button, .btn-toolbar > .btn + .b-signup__button, .btn-toolbar > .b-login-form__button + .b-signup__button, .btn-toolbar > .b-signup__button + .b-signup__button, .btn-toolbar > .b-signup-form__button + .b-signup__button, .btn-toolbar > .b-school-list__item-btn + .b-signup__button, .btn-toolbar > .btn + .b-signup-form__button, .btn-toolbar > .b-login-form__button + .b-signup-form__button, .btn-toolbar > .b-signup__button + .b-signup-form__button, .btn-toolbar > .b-signup-form__button + .b-signup-form__button, .btn-toolbar > .b-school-list__item-btn + .b-signup-form__button, .btn-toolbar > .btn + .b-school-list__item-btn, .btn-toolbar > .b-login-form__button + .b-school-list__item-btn, .btn-toolbar > .b-signup__button + .b-school-list__item-btn, .btn-toolbar > .b-signup-form__button + .b-school-list__item-btn, .btn-toolbar > .b-school-list__item-btn + .b-school-list__item-btn,
 .btn-toolbar > .btn-group + .btn,
 .btn-toolbar > .btn-group + .b-login-form__button,
 .btn-toolbar > .btn-group + .b-signup__button,
 .btn-toolbar > .btn-group + .b-signup-form__button,
+.btn-toolbar > .btn-group + .b-school-list__item-btn,
 .btn-toolbar > .btn + .btn-group,
 .btn-toolbar > .b-login-form__button + .btn-group,
 .btn-toolbar > .b-signup__button + .btn-group,
-.btn-toolbar > .b-signup-form__button + .btn-group {
+.btn-toolbar > .b-signup-form__button + .btn-group,
+.btn-toolbar > .b-school-list__item-btn + .btn-group {
   margin-left: 5px;
 }
 
 /* line 35, ../sass/bootstrap/_button-groups.scss */
-.btn-group > .btn, .btn-group > .b-login-form__button, .btn-group > .b-signup__button, .btn-group > .b-signup-form__button {
+.btn-group > .btn, .btn-group > .b-login-form__button, .btn-group > .b-signup__button, .btn-group > .b-signup-form__button, .btn-group > .b-school-list__item-btn {
   position: relative;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -3696,12 +3715,12 @@ input[type="submit"].btn-mini.b-signup-form__button {
 }
 
 /* line 39, ../sass/bootstrap/_button-groups.scss */
-.btn-group > .btn + .btn, .btn-group > .b-login-form__button + .btn, .btn-group > .b-signup__button + .btn, .btn-group > .b-signup-form__button + .btn, .btn-group > .btn + .b-login-form__button, .btn-group > .b-login-form__button + .b-login-form__button, .btn-group > .b-signup__button + .b-login-form__button, .btn-group > .b-signup-form__button + .b-login-form__button, .btn-group > .btn + .b-signup__button, .btn-group > .b-login-form__button + .b-signup__button, .btn-group > .b-signup__button + .b-signup__button, .btn-group > .b-signup-form__button + .b-signup__button, .btn-group > .btn + .b-signup-form__button, .btn-group > .b-login-form__button + .b-signup-form__button, .btn-group > .b-signup__button + .b-signup-form__button, .btn-group > .b-signup-form__button + .b-signup-form__button {
+.btn-group > .btn + .btn, .btn-group > .b-login-form__button + .btn, .btn-group > .b-signup__button + .btn, .btn-group > .b-signup-form__button + .btn, .btn-group > .b-school-list__item-btn + .btn, .btn-group > .btn + .b-login-form__button, .btn-group > .b-login-form__button + .b-login-form__button, .btn-group > .b-signup__button + .b-login-form__button, .btn-group > .b-signup-form__button + .b-login-form__button, .btn-group > .b-school-list__item-btn + .b-login-form__button, .btn-group > .btn + .b-signup__button, .btn-group > .b-login-form__button + .b-signup__button, .btn-group > .b-signup__button + .b-signup__button, .btn-group > .b-signup-form__button + .b-signup__button, .btn-group > .b-school-list__item-btn + .b-signup__button, .btn-group > .btn + .b-signup-form__button, .btn-group > .b-login-form__button + .b-signup-form__button, .btn-group > .b-signup__button + .b-signup-form__button, .btn-group > .b-signup-form__button + .b-signup-form__button, .btn-group > .b-school-list__item-btn + .b-signup-form__button, .btn-group > .btn + .b-school-list__item-btn, .btn-group > .b-login-form__button + .b-school-list__item-btn, .btn-group > .b-signup__button + .b-school-list__item-btn, .btn-group > .b-signup-form__button + .b-school-list__item-btn, .btn-group > .b-school-list__item-btn + .b-school-list__item-btn {
   margin-left: -1px;
 }
 
 /* line 44, ../sass/bootstrap/_button-groups.scss */
-.btn-group > .btn, .btn-group > .b-login-form__button, .btn-group > .b-signup__button, .btn-group > .b-signup-form__button,
+.btn-group > .btn, .btn-group > .b-login-form__button, .btn-group > .b-signup__button, .btn-group > .b-signup-form__button, .btn-group > .b-school-list__item-btn,
 .btn-group > .dropdown-menu,
 .btn-group > .popover {
   font-size: 14px;
@@ -3723,7 +3742,7 @@ input[type="submit"].btn-mini.b-signup-form__button {
 }
 
 /* line 60, ../sass/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child, .btn-group > .b-login-form__button:first-child, .btn-group > .b-signup__button:first-child, .btn-group > .b-signup-form__button:first-child {
+.btn-group > .btn:first-child, .btn-group > .b-login-form__button:first-child, .btn-group > .b-signup__button:first-child, .btn-group > .b-signup-form__button:first-child, .btn-group > .b-school-list__item-btn:first-child {
   margin-left: 0;
   -webkit-border-top-left-radius: 0;
   -moz-border-radius-topleft: 0;
@@ -3734,7 +3753,7 @@ input[type="submit"].btn-mini.b-signup-form__button {
 }
 
 /* line 67, ../sass/bootstrap/_button-groups.scss */
-.btn-group > .btn:last-child, .btn-group > .b-login-form__button:last-child, .btn-group > .b-signup__button:last-child, .btn-group > .b-signup-form__button:last-child,
+.btn-group > .btn:last-child, .btn-group > .b-login-form__button:last-child, .btn-group > .b-signup__button:last-child, .btn-group > .b-signup-form__button:last-child, .btn-group > .b-school-list__item-btn:last-child,
 .btn-group > .dropdown-toggle {
   -webkit-border-top-right-radius: 0;
   -moz-border-radius-topright: 0;
@@ -3745,7 +3764,7 @@ input[type="submit"].btn-mini.b-signup-form__button {
 }
 
 /* line 72, ../sass/bootstrap/_button-groups.scss */
-.btn-group > .btn.large:first-child, .btn-group > .large.b-login-form__button:first-child, .btn-group > .large.b-signup__button:first-child, .btn-group > .large.b-signup-form__button:first-child {
+.btn-group > .btn.large:first-child, .btn-group > .large.b-login-form__button:first-child, .btn-group > .large.b-signup__button:first-child, .btn-group > .large.b-signup-form__button:first-child, .btn-group > .large.b-school-list__item-btn:first-child {
   margin-left: 0;
   -webkit-border-top-left-radius: 0;
   -moz-border-radius-topleft: 0;
@@ -3756,7 +3775,7 @@ input[type="submit"].btn-mini.b-signup-form__button {
 }
 
 /* line 78, ../sass/bootstrap/_button-groups.scss */
-.btn-group > .btn.large:last-child, .btn-group > .large.b-login-form__button:last-child, .btn-group > .large.b-signup__button:last-child, .btn-group > .large.b-signup-form__button:last-child,
+.btn-group > .btn.large:last-child, .btn-group > .large.b-login-form__button:last-child, .btn-group > .large.b-signup__button:last-child, .btn-group > .large.b-signup-form__button:last-child, .btn-group > .large.b-school-list__item-btn:last-child,
 .btn-group > .large.dropdown-toggle {
   -webkit-border-top-right-radius: 0;
   -moz-border-radius-topright: 0;
@@ -3767,19 +3786,22 @@ input[type="submit"].btn-mini.b-signup-form__button {
 }
 
 /* line 87, ../sass/bootstrap/_button-groups.scss */
-.btn-group > .btn:hover, .btn-group > .b-login-form__button:hover, .btn-group > .b-signup__button:hover, .btn-group > .b-signup-form__button:hover,
+.btn-group > .btn:hover, .btn-group > .b-login-form__button:hover, .btn-group > .b-signup__button:hover, .btn-group > .b-signup-form__button:hover, .btn-group > .b-school-list__item-btn:hover,
 .btn-group > .btn:focus,
 .btn-group > .b-login-form__button:focus,
 .btn-group > .b-signup__button:focus,
 .btn-group > .b-signup-form__button:focus,
+.btn-group > .b-school-list__item-btn:focus,
 .btn-group > .btn:active,
 .btn-group > .b-login-form__button:active,
 .btn-group > .b-signup__button:active,
 .btn-group > .b-signup-form__button:active,
+.btn-group > .b-school-list__item-btn:active,
 .btn-group > .btn.active,
 .btn-group > .active.b-login-form__button,
 .btn-group > .active.b-signup__button,
-.btn-group > .active.b-signup-form__button {
+.btn-group > .active.b-signup-form__button,
+.btn-group > .active.b-school-list__item-btn {
   z-index: 2;
 }
 
@@ -3790,7 +3812,7 @@ input[type="submit"].btn-mini.b-signup-form__button {
 }
 
 /* line 103, ../sass/bootstrap/_button-groups.scss */
-.btn-group > .btn + .dropdown-toggle, .btn-group > .b-login-form__button + .dropdown-toggle, .btn-group > .b-signup__button + .dropdown-toggle, .btn-group > .b-signup-form__button + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .btn-group > .b-login-form__button + .dropdown-toggle, .btn-group > .b-signup__button + .dropdown-toggle, .btn-group > .b-signup-form__button + .dropdown-toggle, .btn-group > .b-school-list__item-btn + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
   -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -3830,7 +3852,7 @@ input[type="submit"].btn-mini.b-signup-form__button {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 137, ../sass/bootstrap/_button-groups.scss */
-.btn-group.open .btn.dropdown-toggle, .btn-group.open .dropdown-toggle.b-login-form__button, .btn-group.open .dropdown-toggle.b-signup__button, .btn-group.open .dropdown-toggle.b-signup-form__button {
+.btn-group.open .btn.dropdown-toggle, .btn-group.open .dropdown-toggle.b-login-form__button, .btn-group.open .dropdown-toggle.b-signup__button, .btn-group.open .dropdown-toggle.b-signup-form__button, .btn-group.open .dropdown-toggle.b-school-list__item-btn {
   background-color: #e6e6e6;
 }
 /* line 140, ../sass/bootstrap/_button-groups.scss */
@@ -3859,7 +3881,7 @@ input[type="submit"].btn-mini.b-signup-form__button {
 }
 
 /* line 162, ../sass/bootstrap/_button-groups.scss */
-.btn .caret, .b-login-form__button .caret, .b-signup__button .caret, .b-signup-form__button .caret {
+.btn .caret, .b-login-form__button .caret, .b-signup__button .caret, .b-signup-form__button .caret, .b-school-list__item-btn .caret {
   margin-top: 8px;
   margin-left: 0;
 }
@@ -3907,7 +3929,7 @@ input[type="submit"].btn-mini.b-signup-form__button {
 }
 
 /* line 208, ../sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn, .btn-group-vertical > .b-login-form__button, .btn-group-vertical > .b-signup__button, .btn-group-vertical > .b-signup-form__button {
+.btn-group-vertical > .btn, .btn-group-vertical > .b-login-form__button, .btn-group-vertical > .b-signup__button, .btn-group-vertical > .b-signup-form__button, .btn-group-vertical > .b-school-list__item-btn {
   display: block;
   float: none;
   max-width: 100%;
@@ -3917,20 +3939,20 @@ input[type="submit"].btn-mini.b-signup-form__button {
 }
 
 /* line 214, ../sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn + .btn, .btn-group-vertical > .b-login-form__button + .btn, .btn-group-vertical > .b-signup__button + .btn, .btn-group-vertical > .b-signup-form__button + .btn, .btn-group-vertical > .btn + .b-login-form__button, .btn-group-vertical > .b-login-form__button + .b-login-form__button, .btn-group-vertical > .b-signup__button + .b-login-form__button, .btn-group-vertical > .b-signup-form__button + .b-login-form__button, .btn-group-vertical > .btn + .b-signup__button, .btn-group-vertical > .b-login-form__button + .b-signup__button, .btn-group-vertical > .b-signup__button + .b-signup__button, .btn-group-vertical > .b-signup-form__button + .b-signup__button, .btn-group-vertical > .btn + .b-signup-form__button, .btn-group-vertical > .b-login-form__button + .b-signup-form__button, .btn-group-vertical > .b-signup__button + .b-signup-form__button, .btn-group-vertical > .b-signup-form__button + .b-signup-form__button {
+.btn-group-vertical > .btn + .btn, .btn-group-vertical > .b-login-form__button + .btn, .btn-group-vertical > .b-signup__button + .btn, .btn-group-vertical > .b-signup-form__button + .btn, .btn-group-vertical > .b-school-list__item-btn + .btn, .btn-group-vertical > .btn + .b-login-form__button, .btn-group-vertical > .b-login-form__button + .b-login-form__button, .btn-group-vertical > .b-signup__button + .b-login-form__button, .btn-group-vertical > .b-signup-form__button + .b-login-form__button, .btn-group-vertical > .b-school-list__item-btn + .b-login-form__button, .btn-group-vertical > .btn + .b-signup__button, .btn-group-vertical > .b-login-form__button + .b-signup__button, .btn-group-vertical > .b-signup__button + .b-signup__button, .btn-group-vertical > .b-signup-form__button + .b-signup__button, .btn-group-vertical > .b-school-list__item-btn + .b-signup__button, .btn-group-vertical > .btn + .b-signup-form__button, .btn-group-vertical > .b-login-form__button + .b-signup-form__button, .btn-group-vertical > .b-signup__button + .b-signup-form__button, .btn-group-vertical > .b-signup-form__button + .b-signup-form__button, .btn-group-vertical > .b-school-list__item-btn + .b-signup-form__button, .btn-group-vertical > .btn + .b-school-list__item-btn, .btn-group-vertical > .b-login-form__button + .b-school-list__item-btn, .btn-group-vertical > .b-signup__button + .b-school-list__item-btn, .btn-group-vertical > .b-signup-form__button + .b-school-list__item-btn, .btn-group-vertical > .b-school-list__item-btn + .b-school-list__item-btn {
   margin-left: 0;
   margin-top: -1px;
 }
 
 /* line 218, ../sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:first-child, .btn-group-vertical > .b-login-form__button:first-child, .btn-group-vertical > .b-signup__button:first-child, .btn-group-vertical > .b-signup-form__button:first-child {
+.btn-group-vertical > .btn:first-child, .btn-group-vertical > .b-login-form__button:first-child, .btn-group-vertical > .b-signup__button:first-child, .btn-group-vertical > .b-signup-form__button:first-child, .btn-group-vertical > .b-school-list__item-btn:first-child {
   -webkit-border-radius: 0 0 0 0;
   -moz-border-radius: 0 0 0 0;
   border-radius: 0 0 0 0;
 }
 
 /* line 221, ../sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:last-child, .btn-group-vertical > .b-login-form__button:last-child, .btn-group-vertical > .b-signup__button:last-child, .btn-group-vertical > .b-signup-form__button:last-child {
+.btn-group-vertical > .btn:last-child, .btn-group-vertical > .b-login-form__button:last-child, .btn-group-vertical > .b-signup__button:last-child, .btn-group-vertical > .b-signup-form__button:last-child, .btn-group-vertical > .b-school-list__item-btn:last-child {
   -webkit-border-radius: 0 0 0 0;
   -moz-border-radius: 0 0 0 0;
   border-radius: 0 0 0 0;
@@ -4603,21 +4625,23 @@ input[type="submit"].btn-mini.b-signup-form__button {
 }
 
 /* line 95, ../sass/bootstrap/_navbar.scss */
-.navbar .btn, .navbar .b-login-form__button, .navbar .b-signup__button, .navbar .b-signup-form__button,
+.navbar .btn, .navbar .b-login-form__button, .navbar .b-signup__button, .navbar .b-signup-form__button, .navbar .b-school-list__item-btn,
 .navbar .btn-group {
   margin-top: 5px;
 }
 
 /* line 102, ../sass/bootstrap/_navbar.scss */
-.navbar .btn-group .btn, .navbar .btn-group .b-login-form__button, .navbar .btn-group .b-signup__button, .navbar .btn-group .b-signup-form__button,
+.navbar .btn-group .btn, .navbar .btn-group .b-login-form__button, .navbar .btn-group .b-signup__button, .navbar .btn-group .b-signup-form__button, .navbar .btn-group .b-school-list__item-btn,
 .navbar .input-prepend .btn,
 .navbar .input-prepend .b-login-form__button,
 .navbar .input-prepend .b-signup__button,
 .navbar .input-prepend .b-signup-form__button,
+.navbar .input-prepend .b-school-list__item-btn,
 .navbar .input-append .btn,
 .navbar .input-append .b-login-form__button,
 .navbar .input-append .b-signup__button,
 .navbar .input-append .b-signup-form__button,
+.navbar .input-append .b-school-list__item-btn,
 .navbar .input-prepend .btn-group,
 .navbar .input-append .btn-group {
   margin-top: 0;
@@ -4652,7 +4676,8 @@ input[type="submit"].btn-mini.b-signup-form__button {
 .navbar-form .btn,
 .navbar-form .b-login-form__button,
 .navbar-form .b-signup__button,
-.navbar-form .b-signup-form__button {
+.navbar-form .b-signup-form__button,
+.navbar-form .b-school-list__item-btn {
   display: inline-block;
   margin-bottom: 0;
 }
@@ -5499,12 +5524,12 @@ input[type="submit"].btn-mini.b-signup-form__button {
   clear: both;
 }
 /* line 83, ../sass/bootstrap/_modals.scss */
-.modal-footer .btn + .btn, .modal-footer .b-login-form__button + .btn, .modal-footer .b-signup__button + .btn, .modal-footer .b-signup-form__button + .btn, .modal-footer .btn + .b-login-form__button, .modal-footer .b-login-form__button + .b-login-form__button, .modal-footer .b-signup__button + .b-login-form__button, .modal-footer .b-signup-form__button + .b-login-form__button, .modal-footer .btn + .b-signup__button, .modal-footer .b-login-form__button + .b-signup__button, .modal-footer .b-signup__button + .b-signup__button, .modal-footer .b-signup-form__button + .b-signup__button, .modal-footer .btn + .b-signup-form__button, .modal-footer .b-login-form__button + .b-signup-form__button, .modal-footer .b-signup__button + .b-signup-form__button, .modal-footer .b-signup-form__button + .b-signup-form__button {
+.modal-footer .btn + .btn, .modal-footer .b-login-form__button + .btn, .modal-footer .b-signup__button + .btn, .modal-footer .b-signup-form__button + .btn, .modal-footer .b-school-list__item-btn + .btn, .modal-footer .btn + .b-login-form__button, .modal-footer .b-login-form__button + .b-login-form__button, .modal-footer .b-signup__button + .b-login-form__button, .modal-footer .b-signup-form__button + .b-login-form__button, .modal-footer .b-school-list__item-btn + .b-login-form__button, .modal-footer .btn + .b-signup__button, .modal-footer .b-login-form__button + .b-signup__button, .modal-footer .b-signup__button + .b-signup__button, .modal-footer .b-signup-form__button + .b-signup__button, .modal-footer .b-school-list__item-btn + .b-signup__button, .modal-footer .btn + .b-signup-form__button, .modal-footer .b-login-form__button + .b-signup-form__button, .modal-footer .b-signup__button + .b-signup-form__button, .modal-footer .b-signup-form__button + .b-signup-form__button, .modal-footer .b-school-list__item-btn + .b-signup-form__button, .modal-footer .btn + .b-school-list__item-btn, .modal-footer .b-login-form__button + .b-school-list__item-btn, .modal-footer .b-signup__button + .b-school-list__item-btn, .modal-footer .b-signup-form__button + .b-school-list__item-btn, .modal-footer .b-school-list__item-btn + .b-school-list__item-btn {
   margin-left: 5px;
   margin-bottom: 0;
 }
 /* line 88, ../sass/bootstrap/_modals.scss */
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .b-login-form__button + .btn, .modal-footer .btn-group .b-signup__button + .btn, .modal-footer .btn-group .b-signup-form__button + .btn, .modal-footer .btn-group .btn + .b-login-form__button, .modal-footer .btn-group .b-login-form__button + .b-login-form__button, .modal-footer .btn-group .b-signup__button + .b-login-form__button, .modal-footer .btn-group .b-signup-form__button + .b-login-form__button, .modal-footer .btn-group .btn + .b-signup__button, .modal-footer .btn-group .b-login-form__button + .b-signup__button, .modal-footer .btn-group .b-signup__button + .b-signup__button, .modal-footer .btn-group .b-signup-form__button + .b-signup__button, .modal-footer .btn-group .btn + .b-signup-form__button, .modal-footer .btn-group .b-login-form__button + .b-signup-form__button, .modal-footer .btn-group .b-signup__button + .b-signup-form__button, .modal-footer .btn-group .b-signup-form__button + .b-signup-form__button {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .b-login-form__button + .btn, .modal-footer .btn-group .b-signup__button + .btn, .modal-footer .btn-group .b-signup-form__button + .btn, .modal-footer .btn-group .b-school-list__item-btn + .btn, .modal-footer .btn-group .btn + .b-login-form__button, .modal-footer .btn-group .b-login-form__button + .b-login-form__button, .modal-footer .btn-group .b-signup__button + .b-login-form__button, .modal-footer .btn-group .b-signup-form__button + .b-login-form__button, .modal-footer .btn-group .b-school-list__item-btn + .b-login-form__button, .modal-footer .btn-group .btn + .b-signup__button, .modal-footer .btn-group .b-login-form__button + .b-signup__button, .modal-footer .btn-group .b-signup__button + .b-signup__button, .modal-footer .btn-group .b-signup-form__button + .b-signup__button, .modal-footer .btn-group .b-school-list__item-btn + .b-signup__button, .modal-footer .btn-group .btn + .b-signup-form__button, .modal-footer .btn-group .b-login-form__button + .b-signup-form__button, .modal-footer .btn-group .b-signup__button + .b-signup-form__button, .modal-footer .btn-group .b-signup-form__button + .b-signup-form__button, .modal-footer .btn-group .b-school-list__item-btn + .b-signup-form__button, .modal-footer .btn-group .btn + .b-school-list__item-btn, .modal-footer .btn-group .b-login-form__button + .b-school-list__item-btn, .modal-footer .btn-group .b-signup__button + .b-school-list__item-btn, .modal-footer .btn-group .b-signup-form__button + .b-school-list__item-btn, .modal-footer .btn-group .b-school-list__item-btn + .b-school-list__item-btn {
   margin-left: -1px;
 }
 /* line 92, ../sass/bootstrap/_modals.scss */
@@ -6015,11 +6040,12 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 
 /* line 73, ../sass/bootstrap/_labels-badges.scss */
-.btn .label, .b-login-form__button .label, .b-signup__button .label, .b-signup-form__button .label,
+.btn .label, .b-login-form__button .label, .b-signup__button .label, .b-signup-form__button .label, .b-school-list__item-btn .label,
 .btn .badge,
 .b-login-form__button .badge,
 .b-signup__button .badge,
-.b-signup-form__button .badge {
+.b-signup-form__button .badge,
+.b-school-list__item-btn .badge {
   position: relative;
   top: -1px;
 }
@@ -6634,7 +6660,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   }
 
   /* line 75, ../sass/bootstrap/_responsive-navbar.scss */
-  .nav-collapse .btn, .nav-collapse .b-login-form__button, .nav-collapse .b-signup__button, .nav-collapse .b-signup-form__button {
+  .nav-collapse .btn, .nav-collapse .b-login-form__button, .nav-collapse .b-signup__button, .nav-collapse .b-signup-form__button, .nav-collapse .b-school-list__item-btn {
     padding: 4px 10px 4px;
     font-weight: normal;
     -webkit-border-radius: 0;
@@ -7283,12 +7309,12 @@ a [class^="icon-"], a [class*=" icon-"] {
 }
 
 /* line 151, ../sass/style.scss */
-.btn [class^="icon-"].icon-large, .b-login-form__button [class^="icon-"].icon-large, .b-signup__button [class^="icon-"].icon-large, .b-signup-form__button [class^="icon-"].icon-large, .nav [class^="icon-"].icon-large, .btn [class*=" icon-"].icon-large, .b-login-form__button [class*=" icon-"].icon-large, .b-signup__button [class*=" icon-"].icon-large, .b-signup-form__button [class*=" icon-"].icon-large, .nav [class*=" icon-"].icon-large {
+.btn [class^="icon-"].icon-large, .b-login-form__button [class^="icon-"].icon-large, .b-signup__button [class^="icon-"].icon-large, .b-signup-form__button [class^="icon-"].icon-large, .b-school-list__item-btn [class^="icon-"].icon-large, .nav [class^="icon-"].icon-large, .btn [class*=" icon-"].icon-large, .b-login-form__button [class*=" icon-"].icon-large, .b-signup__button [class*=" icon-"].icon-large, .b-signup-form__button [class*=" icon-"].icon-large, .b-school-list__item-btn [class*=" icon-"].icon-large, .nav [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
 /* line 152, ../sass/style.scss */
-.btn [class^="icon-"].icon-spin, .b-login-form__button [class^="icon-"].icon-spin, .b-signup__button [class^="icon-"].icon-spin, .b-signup-form__button [class^="icon-"].icon-spin, .nav [class^="icon-"].icon-spin, .btn [class*=" icon-"].icon-spin, .b-login-form__button [class*=" icon-"].icon-spin, .b-signup__button [class*=" icon-"].icon-spin, .b-signup-form__button [class*=" icon-"].icon-spin, .nav [class*=" icon-"].icon-spin {
+.btn [class^="icon-"].icon-spin, .b-login-form__button [class^="icon-"].icon-spin, .b-signup__button [class^="icon-"].icon-spin, .b-signup-form__button [class^="icon-"].icon-spin, .b-school-list__item-btn [class^="icon-"].icon-spin, .nav [class^="icon-"].icon-spin, .btn [class*=" icon-"].icon-spin, .b-login-form__button [class*=" icon-"].icon-spin, .b-signup__button [class*=" icon-"].icon-spin, .b-signup-form__button [class*=" icon-"].icon-spin, .b-school-list__item-btn [class*=" icon-"].icon-spin, .nav [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
@@ -7298,37 +7324,37 @@ a [class^="icon-"], a [class*=" icon-"] {
 }
 
 /* line 154, ../sass/style.scss */
-.btn [class^="icon-"].pull-left.icon-2x, .b-login-form__button [class^="icon-"].pull-left.icon-2x, .b-signup__button [class^="icon-"].pull-left.icon-2x, .b-signup-form__button [class^="icon-"].pull-left.icon-2x, .btn [class^="icon-"].icon-2x.b-header__logo, .b-login-form__button [class^="icon-"].icon-2x.b-header__logo, .b-signup__button [class^="icon-"].icon-2x.b-header__logo, .b-signup-form__button [class^="icon-"].icon-2x.b-header__logo, .btn [class^="icon-"].icon-2x.b-login-form__rmbr-label, .b-login-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .b-signup__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .b-signup-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn [class^="icon-"].icon-2x.b-login-form__forgot-password, .b-login-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .b-signup__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .b-signup-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn [class*=" icon-"].pull-left.icon-2x, .b-login-form__button [class*=" icon-"].pull-left.icon-2x, .b-signup__button [class*=" icon-"].pull-left.icon-2x, .b-signup-form__button [class*=" icon-"].pull-left.icon-2x, .btn [class*=" icon-"].icon-2x.b-header__logo, .b-login-form__button [class*=" icon-"].icon-2x.b-header__logo, .b-signup__button [class*=" icon-"].icon-2x.b-header__logo, .b-signup-form__button [class*=" icon-"].icon-2x.b-header__logo, .btn [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .b-login-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .b-signup__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn [class*=" icon-"].icon-2x.b-login-form__forgot-password, .b-login-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .b-signup__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn [class^="icon-"].pull-right.icon-2x, .b-login-form__button [class^="icon-"].pull-right.icon-2x, .b-signup__button [class^="icon-"].pull-right.icon-2x, .b-signup-form__button [class^="icon-"].pull-right.icon-2x, .btn [class^="icon-"].icon-2x.b-login-form, .b-login-form__button [class^="icon-"].icon-2x.b-login-form, .b-signup__button [class^="icon-"].icon-2x.b-login-form, .b-signup-form__button [class^="icon-"].icon-2x.b-login-form, .btn [class*=" icon-"].pull-right.icon-2x, .b-login-form__button [class*=" icon-"].pull-right.icon-2x, .b-signup__button [class*=" icon-"].pull-right.icon-2x, .b-signup-form__button [class*=" icon-"].pull-right.icon-2x, .btn [class*=" icon-"].icon-2x.b-login-form, .b-login-form__button [class*=" icon-"].icon-2x.b-login-form, .b-signup__button [class*=" icon-"].icon-2x.b-login-form, .b-signup-form__button [class*=" icon-"].icon-2x.b-login-form {
+.btn [class^="icon-"].pull-left.icon-2x, .b-login-form__button [class^="icon-"].pull-left.icon-2x, .b-signup__button [class^="icon-"].pull-left.icon-2x, .b-signup-form__button [class^="icon-"].pull-left.icon-2x, .b-school-list__item-btn [class^="icon-"].pull-left.icon-2x, .btn [class^="icon-"].icon-2x.b-header__logo, .b-login-form__button [class^="icon-"].icon-2x.b-header__logo, .b-signup__button [class^="icon-"].icon-2x.b-header__logo, .b-signup-form__button [class^="icon-"].icon-2x.b-header__logo, .b-school-list__item-btn [class^="icon-"].icon-2x.b-header__logo, .btn [class^="icon-"].icon-2x.b-login-form__rmbr-label, .b-login-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .b-signup__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .b-signup-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .b-school-list__item-btn [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn [class^="icon-"].icon-2x.b-login-form__forgot-password, .b-login-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .b-signup__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .b-signup-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .b-school-list__item-btn [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn [class*=" icon-"].pull-left.icon-2x, .b-login-form__button [class*=" icon-"].pull-left.icon-2x, .b-signup__button [class*=" icon-"].pull-left.icon-2x, .b-signup-form__button [class*=" icon-"].pull-left.icon-2x, .b-school-list__item-btn [class*=" icon-"].pull-left.icon-2x, .btn [class*=" icon-"].icon-2x.b-header__logo, .b-login-form__button [class*=" icon-"].icon-2x.b-header__logo, .b-signup__button [class*=" icon-"].icon-2x.b-header__logo, .b-signup-form__button [class*=" icon-"].icon-2x.b-header__logo, .b-school-list__item-btn [class*=" icon-"].icon-2x.b-header__logo, .btn [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .b-login-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .b-signup__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .b-school-list__item-btn [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn [class*=" icon-"].icon-2x.b-login-form__forgot-password, .b-login-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .b-signup__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .b-school-list__item-btn [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn [class^="icon-"].pull-right.icon-2x, .b-login-form__button [class^="icon-"].pull-right.icon-2x, .b-signup__button [class^="icon-"].pull-right.icon-2x, .b-signup-form__button [class^="icon-"].pull-right.icon-2x, .b-school-list__item-btn [class^="icon-"].pull-right.icon-2x, .btn [class^="icon-"].icon-2x.b-login-form, .b-login-form__button [class^="icon-"].icon-2x.b-login-form, .b-signup__button [class^="icon-"].icon-2x.b-login-form, .b-signup-form__button [class^="icon-"].icon-2x.b-login-form, .b-school-list__item-btn [class^="icon-"].icon-2x.b-login-form, .btn [class*=" icon-"].pull-right.icon-2x, .b-login-form__button [class*=" icon-"].pull-right.icon-2x, .b-signup__button [class*=" icon-"].pull-right.icon-2x, .b-signup-form__button [class*=" icon-"].pull-right.icon-2x, .b-school-list__item-btn [class*=" icon-"].pull-right.icon-2x, .btn [class*=" icon-"].icon-2x.b-login-form, .b-login-form__button [class*=" icon-"].icon-2x.b-login-form, .b-signup__button [class*=" icon-"].icon-2x.b-login-form, .b-signup-form__button [class*=" icon-"].icon-2x.b-login-form, .b-school-list__item-btn [class*=" icon-"].icon-2x.b-login-form {
   margin-top: .18em;
 }
 
 /* line 155, ../sass/style.scss */
-.btn [class^="icon-"].icon-spin.icon-large, .b-login-form__button [class^="icon-"].icon-spin.icon-large, .b-signup__button [class^="icon-"].icon-spin.icon-large, .b-signup-form__button [class^="icon-"].icon-spin.icon-large, .btn [class*=" icon-"].icon-spin.icon-large, .b-login-form__button [class*=" icon-"].icon-spin.icon-large, .b-signup__button [class*=" icon-"].icon-spin.icon-large, .b-signup-form__button [class*=" icon-"].icon-spin.icon-large {
+.btn [class^="icon-"].icon-spin.icon-large, .b-login-form__button [class^="icon-"].icon-spin.icon-large, .b-signup__button [class^="icon-"].icon-spin.icon-large, .b-signup-form__button [class^="icon-"].icon-spin.icon-large, .b-school-list__item-btn [class^="icon-"].icon-spin.icon-large, .btn [class*=" icon-"].icon-spin.icon-large, .b-login-form__button [class*=" icon-"].icon-spin.icon-large, .b-signup__button [class*=" icon-"].icon-spin.icon-large, .b-signup-form__button [class*=" icon-"].icon-spin.icon-large, .b-school-list__item-btn [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
 /* line 156, ../sass/style.scss */
-.btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn-small.b-login-form__button [class^="icon-"].pull-left.icon-2x, .btn-small.b-signup__button [class^="icon-"].pull-left.icon-2x, .btn-small.b-signup-form__button [class^="icon-"].pull-left.icon-2x, .btn.btn-small [class^="icon-"].icon-2x.b-header__logo, .btn-small.b-login-form__button [class^="icon-"].icon-2x.b-header__logo, .btn-small.b-signup__button [class^="icon-"].icon-2x.b-header__logo, .btn-small.b-signup-form__button [class^="icon-"].icon-2x.b-header__logo, .btn.btn-small [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-login-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-signup__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-signup-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn.btn-small [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-login-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-signup__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-signup-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn.btn-small [class*=" icon-"].pull-left.icon-2x, .btn-small.b-login-form__button [class*=" icon-"].pull-left.icon-2x, .btn-small.b-signup__button [class*=" icon-"].pull-left.icon-2x, .btn-small.b-signup-form__button [class*=" icon-"].pull-left.icon-2x, .btn.btn-small [class*=" icon-"].icon-2x.b-header__logo, .btn-small.b-login-form__button [class*=" icon-"].icon-2x.b-header__logo, .btn-small.b-signup__button [class*=" icon-"].icon-2x.b-header__logo, .btn-small.b-signup-form__button [class*=" icon-"].icon-2x.b-header__logo, .btn.btn-small [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-login-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-signup__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn.btn-small [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-login-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-signup__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn.btn-small [class^="icon-"].pull-right.icon-2x, .btn-small.b-login-form__button [class^="icon-"].pull-right.icon-2x, .btn-small.b-signup__button [class^="icon-"].pull-right.icon-2x, .btn-small.b-signup-form__button [class^="icon-"].pull-right.icon-2x, .btn.btn-small [class^="icon-"].icon-2x.b-login-form, .btn-small.b-login-form__button [class^="icon-"].icon-2x.b-login-form, .btn-small.b-signup__button [class^="icon-"].icon-2x.b-login-form, .btn-small.b-signup-form__button [class^="icon-"].icon-2x.b-login-form, .btn.btn-small [class*=" icon-"].pull-right.icon-2x, .btn-small.b-login-form__button [class*=" icon-"].pull-right.icon-2x, .btn-small.b-signup__button [class*=" icon-"].pull-right.icon-2x, .btn-small.b-signup-form__button [class*=" icon-"].pull-right.icon-2x, .btn.btn-small [class*=" icon-"].icon-2x.b-login-form, .btn-small.b-login-form__button [class*=" icon-"].icon-2x.b-login-form, .btn-small.b-signup__button [class*=" icon-"].icon-2x.b-login-form, .btn-small.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form {
+.btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn-small.b-login-form__button [class^="icon-"].pull-left.icon-2x, .btn-small.b-signup__button [class^="icon-"].pull-left.icon-2x, .btn-small.b-signup-form__button [class^="icon-"].pull-left.icon-2x, .btn-small.b-school-list__item-btn [class^="icon-"].pull-left.icon-2x, .btn.btn-small [class^="icon-"].icon-2x.b-header__logo, .btn-small.b-login-form__button [class^="icon-"].icon-2x.b-header__logo, .btn-small.b-signup__button [class^="icon-"].icon-2x.b-header__logo, .btn-small.b-signup-form__button [class^="icon-"].icon-2x.b-header__logo, .btn-small.b-school-list__item-btn [class^="icon-"].icon-2x.b-header__logo, .btn.btn-small [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-login-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-signup__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-signup-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-school-list__item-btn [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn.btn-small [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-login-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-signup__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-signup-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-school-list__item-btn [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn.btn-small [class*=" icon-"].pull-left.icon-2x, .btn-small.b-login-form__button [class*=" icon-"].pull-left.icon-2x, .btn-small.b-signup__button [class*=" icon-"].pull-left.icon-2x, .btn-small.b-signup-form__button [class*=" icon-"].pull-left.icon-2x, .btn-small.b-school-list__item-btn [class*=" icon-"].pull-left.icon-2x, .btn.btn-small [class*=" icon-"].icon-2x.b-header__logo, .btn-small.b-login-form__button [class*=" icon-"].icon-2x.b-header__logo, .btn-small.b-signup__button [class*=" icon-"].icon-2x.b-header__logo, .btn-small.b-signup-form__button [class*=" icon-"].icon-2x.b-header__logo, .btn-small.b-school-list__item-btn [class*=" icon-"].icon-2x.b-header__logo, .btn.btn-small [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-login-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-signup__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-small.b-school-list__item-btn [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn.btn-small [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-login-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-signup__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-small.b-school-list__item-btn [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn.btn-small [class^="icon-"].pull-right.icon-2x, .btn-small.b-login-form__button [class^="icon-"].pull-right.icon-2x, .btn-small.b-signup__button [class^="icon-"].pull-right.icon-2x, .btn-small.b-signup-form__button [class^="icon-"].pull-right.icon-2x, .btn-small.b-school-list__item-btn [class^="icon-"].pull-right.icon-2x, .btn.btn-small [class^="icon-"].icon-2x.b-login-form, .btn-small.b-login-form__button [class^="icon-"].icon-2x.b-login-form, .btn-small.b-signup__button [class^="icon-"].icon-2x.b-login-form, .btn-small.b-signup-form__button [class^="icon-"].icon-2x.b-login-form, .btn-small.b-school-list__item-btn [class^="icon-"].icon-2x.b-login-form, .btn.btn-small [class*=" icon-"].pull-right.icon-2x, .btn-small.b-login-form__button [class*=" icon-"].pull-right.icon-2x, .btn-small.b-signup__button [class*=" icon-"].pull-right.icon-2x, .btn-small.b-signup-form__button [class*=" icon-"].pull-right.icon-2x, .btn-small.b-school-list__item-btn [class*=" icon-"].pull-right.icon-2x, .btn.btn-small [class*=" icon-"].icon-2x.b-login-form, .btn-small.b-login-form__button [class*=" icon-"].icon-2x.b-login-form, .btn-small.b-signup__button [class*=" icon-"].icon-2x.b-login-form, .btn-small.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form, .btn-small.b-school-list__item-btn [class*=" icon-"].icon-2x.b-login-form {
   margin-top: .25em;
 }
 
 /* line 157, ../sass/style.scss */
-.btn.btn-large [class^="icon-"], .btn-large.b-login-form__button [class^="icon-"], .b-signup__button [class^="icon-"], .btn-large.b-signup-form__button [class^="icon-"], .btn.btn-large [class*=" icon-"], .btn-large.b-login-form__button [class*=" icon-"], .b-signup__button [class*=" icon-"], .btn-large.b-signup-form__button [class*=" icon-"] {
+.btn.btn-large [class^="icon-"], .btn-large.b-login-form__button [class^="icon-"], .b-signup__button [class^="icon-"], .btn-large.b-signup-form__button [class^="icon-"], .btn-large.b-school-list__item-btn [class^="icon-"], .btn.btn-large [class*=" icon-"], .btn-large.b-login-form__button [class*=" icon-"], .b-signup__button [class*=" icon-"], .btn-large.b-signup-form__button [class*=" icon-"], .btn-large.b-school-list__item-btn [class*=" icon-"] {
   margin-top: 0;
 }
 
 /* line 157, ../sass/style.scss */
-.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn-large.b-login-form__button [class^="icon-"].pull-left.icon-2x, .b-signup__button [class^="icon-"].pull-left.icon-2x, .btn-large.b-signup-form__button [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class^="icon-"].icon-2x.b-header__logo, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-header__logo, .b-signup__button [class^="icon-"].icon-2x.b-header__logo, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-header__logo, .btn.btn-large [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .b-signup__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn.btn-large [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .b-signup__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn.btn-large [class*=" icon-"].pull-left.icon-2x, .btn-large.b-login-form__button [class*=" icon-"].pull-left.icon-2x, .b-signup__button [class*=" icon-"].pull-left.icon-2x, .btn-large.b-signup-form__button [class*=" icon-"].pull-left.icon-2x, .btn.btn-large [class*=" icon-"].icon-2x.b-header__logo, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-header__logo, .b-signup__button [class*=" icon-"].icon-2x.b-header__logo, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-header__logo, .btn.btn-large [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .b-signup__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn.btn-large [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .b-signup__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn-large.b-login-form__button [class^="icon-"].pull-right.icon-2x, .b-signup__button [class^="icon-"].pull-right.icon-2x, .btn-large.b-signup-form__button [class^="icon-"].pull-right.icon-2x, .btn.btn-large [class^="icon-"].icon-2x.b-login-form, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-login-form, .b-signup__button [class^="icon-"].icon-2x.b-login-form, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-login-form, .btn.btn-large [class*=" icon-"].pull-right.icon-2x, .btn-large.b-login-form__button [class*=" icon-"].pull-right.icon-2x, .b-signup__button [class*=" icon-"].pull-right.icon-2x, .btn-large.b-signup-form__button [class*=" icon-"].pull-right.icon-2x, .btn.btn-large [class*=" icon-"].icon-2x.b-login-form, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-login-form, .b-signup__button [class*=" icon-"].icon-2x.b-login-form, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form {
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn-large.b-login-form__button [class^="icon-"].pull-left.icon-2x, .b-signup__button [class^="icon-"].pull-left.icon-2x, .btn-large.b-signup-form__button [class^="icon-"].pull-left.icon-2x, .btn-large.b-school-list__item-btn [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class^="icon-"].icon-2x.b-header__logo, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-header__logo, .b-signup__button [class^="icon-"].icon-2x.b-header__logo, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-header__logo, .btn-large.b-school-list__item-btn [class^="icon-"].icon-2x.b-header__logo, .btn.btn-large [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .b-signup__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-school-list__item-btn [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn.btn-large [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .b-signup__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-school-list__item-btn [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn.btn-large [class*=" icon-"].pull-left.icon-2x, .btn-large.b-login-form__button [class*=" icon-"].pull-left.icon-2x, .b-signup__button [class*=" icon-"].pull-left.icon-2x, .btn-large.b-signup-form__button [class*=" icon-"].pull-left.icon-2x, .btn-large.b-school-list__item-btn [class*=" icon-"].pull-left.icon-2x, .btn.btn-large [class*=" icon-"].icon-2x.b-header__logo, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-header__logo, .b-signup__button [class*=" icon-"].icon-2x.b-header__logo, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-header__logo, .btn-large.b-school-list__item-btn [class*=" icon-"].icon-2x.b-header__logo, .btn.btn-large [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .b-signup__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-school-list__item-btn [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn.btn-large [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .b-signup__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-school-list__item-btn [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn-large.b-login-form__button [class^="icon-"].pull-right.icon-2x, .b-signup__button [class^="icon-"].pull-right.icon-2x, .btn-large.b-signup-form__button [class^="icon-"].pull-right.icon-2x, .btn-large.b-school-list__item-btn [class^="icon-"].pull-right.icon-2x, .btn.btn-large [class^="icon-"].icon-2x.b-login-form, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-login-form, .b-signup__button [class^="icon-"].icon-2x.b-login-form, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-login-form, .btn-large.b-school-list__item-btn [class^="icon-"].icon-2x.b-login-form, .btn.btn-large [class*=" icon-"].pull-right.icon-2x, .btn-large.b-login-form__button [class*=" icon-"].pull-right.icon-2x, .b-signup__button [class*=" icon-"].pull-right.icon-2x, .btn-large.b-signup-form__button [class*=" icon-"].pull-right.icon-2x, .btn-large.b-school-list__item-btn [class*=" icon-"].pull-right.icon-2x, .btn.btn-large [class*=" icon-"].icon-2x.b-login-form, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-login-form, .b-signup__button [class*=" icon-"].icon-2x.b-login-form, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form, .btn-large.b-school-list__item-btn [class*=" icon-"].icon-2x.b-login-form {
   margin-top: .05em;
 }
 
 /* line 158, ../sass/style.scss */
-.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn-large.b-login-form__button [class^="icon-"].pull-left.icon-2x, .b-signup__button [class^="icon-"].pull-left.icon-2x, .btn-large.b-signup-form__button [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class^="icon-"].icon-2x.b-header__logo, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-header__logo, .b-signup__button [class^="icon-"].icon-2x.b-header__logo, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-header__logo, .btn.btn-large [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .b-signup__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn.btn-large [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .b-signup__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn.btn-large [class*=" icon-"].pull-left.icon-2x, .btn-large.b-login-form__button [class*=" icon-"].pull-left.icon-2x, .b-signup__button [class*=" icon-"].pull-left.icon-2x, .btn-large.b-signup-form__button [class*=" icon-"].pull-left.icon-2x, .btn.btn-large [class*=" icon-"].icon-2x.b-header__logo, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-header__logo, .b-signup__button [class*=" icon-"].icon-2x.b-header__logo, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-header__logo, .btn.btn-large [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .b-signup__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn.btn-large [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .b-signup__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password {
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn-large.b-login-form__button [class^="icon-"].pull-left.icon-2x, .b-signup__button [class^="icon-"].pull-left.icon-2x, .btn-large.b-signup-form__button [class^="icon-"].pull-left.icon-2x, .btn-large.b-school-list__item-btn [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class^="icon-"].icon-2x.b-header__logo, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-header__logo, .b-signup__button [class^="icon-"].icon-2x.b-header__logo, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-header__logo, .btn-large.b-school-list__item-btn [class^="icon-"].icon-2x.b-header__logo, .btn.btn-large [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .b-signup__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-school-list__item-btn [class^="icon-"].icon-2x.b-login-form__rmbr-label, .btn.btn-large [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .b-signup__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-school-list__item-btn [class^="icon-"].icon-2x.b-login-form__forgot-password, .btn.btn-large [class*=" icon-"].pull-left.icon-2x, .btn-large.b-login-form__button [class*=" icon-"].pull-left.icon-2x, .b-signup__button [class*=" icon-"].pull-left.icon-2x, .btn-large.b-signup-form__button [class*=" icon-"].pull-left.icon-2x, .btn-large.b-school-list__item-btn [class*=" icon-"].pull-left.icon-2x, .btn.btn-large [class*=" icon-"].icon-2x.b-header__logo, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-header__logo, .b-signup__button [class*=" icon-"].icon-2x.b-header__logo, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-header__logo, .btn-large.b-school-list__item-btn [class*=" icon-"].icon-2x.b-header__logo, .btn.btn-large [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .b-signup__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn-large.b-school-list__item-btn [class*=" icon-"].icon-2x.b-login-form__rmbr-label, .btn.btn-large [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .b-signup__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form__forgot-password, .btn-large.b-school-list__item-btn [class*=" icon-"].icon-2x.b-login-form__forgot-password {
   margin-right: .2em;
 }
 
 /* line 159, ../sass/style.scss */
-.btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn-large.b-login-form__button [class^="icon-"].pull-right.icon-2x, .b-signup__button [class^="icon-"].pull-right.icon-2x, .btn-large.b-signup-form__button [class^="icon-"].pull-right.icon-2x, .btn.btn-large [class^="icon-"].icon-2x.b-login-form, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-login-form, .b-signup__button [class^="icon-"].icon-2x.b-login-form, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-login-form, .btn.btn-large [class*=" icon-"].pull-right.icon-2x, .btn-large.b-login-form__button [class*=" icon-"].pull-right.icon-2x, .b-signup__button [class*=" icon-"].pull-right.icon-2x, .btn-large.b-signup-form__button [class*=" icon-"].pull-right.icon-2x, .btn.btn-large [class*=" icon-"].icon-2x.b-login-form, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-login-form, .b-signup__button [class*=" icon-"].icon-2x.b-login-form, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form {
+.btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn-large.b-login-form__button [class^="icon-"].pull-right.icon-2x, .b-signup__button [class^="icon-"].pull-right.icon-2x, .btn-large.b-signup-form__button [class^="icon-"].pull-right.icon-2x, .btn-large.b-school-list__item-btn [class^="icon-"].pull-right.icon-2x, .btn.btn-large [class^="icon-"].icon-2x.b-login-form, .btn-large.b-login-form__button [class^="icon-"].icon-2x.b-login-form, .b-signup__button [class^="icon-"].icon-2x.b-login-form, .btn-large.b-signup-form__button [class^="icon-"].icon-2x.b-login-form, .btn-large.b-school-list__item-btn [class^="icon-"].icon-2x.b-login-form, .btn.btn-large [class*=" icon-"].pull-right.icon-2x, .btn-large.b-login-form__button [class*=" icon-"].pull-right.icon-2x, .b-signup__button [class*=" icon-"].pull-right.icon-2x, .btn-large.b-signup-form__button [class*=" icon-"].pull-right.icon-2x, .btn-large.b-school-list__item-btn [class*=" icon-"].pull-right.icon-2x, .btn.btn-large [class*=" icon-"].icon-2x.b-login-form, .btn-large.b-login-form__button [class*=" icon-"].icon-2x.b-login-form, .b-signup__button [class*=" icon-"].icon-2x.b-login-form, .btn-large.b-signup-form__button [class*=" icon-"].icon-2x.b-login-form, .btn-large.b-school-list__item-btn [class*=" icon-"].icon-2x.b-login-form {
   margin-left: .2em;
 }
 
@@ -9307,7 +9333,7 @@ body {
 
 /* Bootstrap overrides */
 /* line 539, ../sass/style.scss */
-.btn, .b-login-form__button, .b-signup__button, .b-signup-form__button {
+.btn, .b-login-form__button, .b-signup__button, .b-signup-form__button, .b-school-list__item-btn {
   background-image: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -9373,7 +9399,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 /* line 563, ../sass/style.scss */
-.g-input, .b-login-form__email, .b-login-form__password, .b-signup-form__name, .b-signup-form__email, .b-signup-form__password, .b-signup-form__password-confirm {
+.g-input, .b-login-form__email, .b-login-form__password, .b-signup-form__name, .b-signup-form__email, .b-signup-form__password, .b-signup-form__password-confirm, .b-addclasses-form__school, .b-addclasses-form__major, .b-addclasses-form__classes {
   border-width: 2px !important;
   webkit-box-shadow: none;
   box-shadow: none;
@@ -9381,15 +9407,21 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 /* END Other stuff */
+/* line 571, ../sass/style.scss */
+.b-body--index {
+  background-color: #ecf0f1;
+}
+
 /* Header */
-/* line 572, ../sass/style.scss */
+/* line 576, ../sass/style.scss */
 .b-header {
   padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #ecf0f1;
 }
 
-/* line 578, ../sass/style.scss */
+/* line 584, ../sass/style.scss */
 .b-header__logo {
   font-size: 25px;
   line-height: 30px;
@@ -9398,36 +9430,36 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   color: #5b3b70;
 }
 
-/* line 586, ../sass/style.scss */
+/* line 592, ../sass/style.scss */
 .b-login-form {
   margin-right: 20px;
 }
 
-/* line 595, ../sass/style.scss */
+/* line 601, ../sass/style.scss */
 .b-login-form__email:focus, .b-login-form__password:focus {
   border-color: #5b3b70 !important;
 }
 
-/* line 598, ../sass/style.scss */
+/* line 604, ../sass/style.scss */
 .b-login-form__button {
   color: white;
   background-color: #5b3b70;
   border-color: #5b3b70;
 }
 
-/* line 604, ../sass/style.scss */
+/* line 610, ../sass/style.scss */
 .b-login-form__button:hover, .b-login-form__button:active, .b-login-form__button:focus {
   color: white;
   background-color: #5b3b70;
   border-color: #5b3b70;
 }
 
-/* line 609, ../sass/style.scss */
+/* line 615, ../sass/style.scss */
 .b-login-form__rmbr-label {
   display: inline-block;
 }
 
-/* line 614, ../sass/style.scss */
+/* line 620, ../sass/style.scss */
 .b-login-form__forgot-password {
   display: inline-block;
   margin-left: 55px;
@@ -9435,40 +9467,42 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 /* END Header */
 /* Signup main */
-/* line 622, ../sass/style.scss */
+/* line 628, ../sass/style.scss */
 .b-signup {
   background: url("../images/patterns/shattered.png") repeat;
   color: white;
   margin: auto;
+  border-top: 2px solid #bdc3c7;
+  border-bottom: 2px solid #bdc3c7;
 }
 
-/* line 627, ../sass/style.scss */
+/* line 635, ../sass/style.scss */
 .b-signup__overlay {
   background-color: rgba(91, 59, 112, 0.7);
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 632, ../sass/style.scss */
+/* line 640, ../sass/style.scss */
 .b-signup__main {
   margin: 80px 20px;
   text-align: center;
 }
 
-/* line 637, ../sass/style.scss */
+/* line 645, ../sass/style.scss */
 .b-signup__logo {
   font-size: 100px;
   line-height: 1;
   color: white;
 }
 
-/* line 642, ../sass/style.scss */
+/* line 650, ../sass/style.scss */
 .b-signup__lead {
   font-size: 24px;
   line-height: 1.25;
 }
 
-/* line 647, ../sass/style.scss */
+/* line 655, ../sass/style.scss */
 .b-signup__button {
   font-size: 21px;
   padding: 14px 24px;
@@ -9478,15 +9512,16 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   text-shadow: none;
 }
 
-/* line 657, ../sass/style.scss */
+/* line 665, ../sass/style.scss */
 .b-signup__button:hover, .b-signup__button:active, .b-signup__button:focus {
   background-color: #caa91e;
   border-color: #caa91e;
 }
 
 /* END Signup main */
-/* line 664, ../sass/style.scss */
+/* line 672, ../sass/style.scss */
 .b-main {
+  background-color: #ecf0f1;
   padding-top: 20px;
   padding-bottom: 20px;
   margin: auto;
@@ -9495,7 +9530,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 /* Features index */
-/* line 676, ../sass/style.scss */
+/* line 686, ../sass/style.scss */
 .b-features {
   max-width: 1000px;
   margin: auto;
@@ -9504,19 +9539,19 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   text-align: center;
 }
 
-/* line 683, ../sass/style.scss */
+/* line 693, ../sass/style.scss */
 .b-features-col {
   margin-top: 40px;
   margin-bottom: 40px;
   font-size: 16px;
 }
 
-/* line 689, ../sass/style.scss */
+/* line 699, ../sass/style.scss */
 .b-features-col__title, .b-features-col__text {
   text-align: center;
 }
 
-/* line 692, ../sass/style.scss */
+/* line 702, ../sass/style.scss */
 .b-features-col__text {
   padding-left: 10px;
   padding-right: 10px;
@@ -9524,7 +9559,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 /* END Features index */
 /* Calendar block */
-/* line 700, ../sass/style.scss */
+/* line 710, ../sass/style.scss */
 .b-calendar__week-row {
   display: block;
   width: 100%;
@@ -9546,12 +9581,20 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /* Dashboard block */
 /* END Dashboard block */
 /*------------ Sign up page ------------- */
-/* line 709, ../sass/style.scss */
-.b-singnup-body {
+/* line 719, ../sass/style.scss */
+.b-body--signup, .b-body--add-classes {
   background-color: #e6e6e6;
 }
 
-/* line 713, ../sass/style.scss */
+/* line 723, ../sass/style.scss */
+.b-signup-page-logo {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #5b3b70;
+}
+
+/* line 729, ../sass/style.scss */
 .b-signup-form {
   display: inline;
   float: left;
@@ -9561,63 +9604,210 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   margin-right: 25%;
   border: 2px solid #E2E3D9;
   overflow: hidden;
+  background-color: white;
 }
 
-/* line 720, ../sass/style.scss */
-.b-signup-form__create-account {
+/* line 737, ../sass/style.scss */
+.b-footer__container--signup-form {
+  display: inline;
+  float: left;
+  width: 50%;
+  margin: 0 0%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20px;
+}
+
+/* line 743, ../sass/style.scss */
+.b-signup-form__create-account, .b-signup-form__social {
   display: inline;
   float: left;
   width: 50%;
   margin: 0 0%;
 }
 
-/* line 725, ../sass/style.scss */
-.b-signup-form__social {
-  display: inline;
-  float: left;
-  width: 50%;
-  margin: 0 0%;
-}
-
-/* line 729, ../sass/style.scss */
+/* line 746, ../sass/style.scss */
 .b-signup-form__title, .b-signup-form__input-group, .b-signup-form__button {
   margin-top: 10px;
   margin-left: 20px;
 }
 
-/* line 733, ../sass/style.scss */
+/* line 750, ../sass/style.scss */
 .b-signup-form__title {
   font-size: 20px;
+  font-weight: normal;
 }
 
-/* line 739, ../sass/style.scss */
+/* line 757, ../sass/style.scss */
 .b-signup-form__button {
   font-size: 14px;
-  margin-top: 20px;
   background-color: #caa91e;
   border-color: #caa91e;
   display: block;
   text-shadow: none;
 }
 
-/* line 748, ../sass/style.scss */
+/* line 765, ../sass/style.scss */
 .b-signup-form__button:hover, .b-signup-form__button:active, .b-signup-form__button:focus {
   background-color: #caa91e;
   border-color: #caa91e;
 }
 
-/* line 752, ../sass/style.scss */
+/* line 769, ../sass/style.scss */
 .b-signup-form__name:focus, .b-signup-form__email:focus, .b-signup-form__password:focus, .b-signup-form__password-confirm:focus {
   border-color: #5b3b70 !important;
 }
 
 /*---------- END Sign up page ----------- */
+/*---------- Add classes page ----------- */
+/* line 775, ../sass/style.scss */
+.b-addclasses-form__progress {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  border: 2px solid #e6e6e6;
+  /*CSS counters to number the steps*/
+  display: inline;
+  float: left;
+  width: 66.66667%;
+  margin: 0 0%;
+  margin-left: 16.66667%;
+  margin-right: 16.66667%;
+}
+
+/* line 785, ../sass/style.scss */
+.b-addclasses-form__progress-item {
+  list-style-type: none;
+  font-size: 16px;
+  width: 33.33%;
+  text-align: center;
+  float: left;
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 795, ../sass/style.scss */
+.b-addclasses-form__progress-item--active {
+  background-color: #5b3b70;
+  color: white;
+}
+
+/* line 799, ../sass/style.scss */
+.b-addclasses-form__add-school, .b-addclasses-form__add-major, .b-addclasses-form__add-classes {
+  display: inline;
+  float: left;
+  width: 66.66667%;
+  margin: 0 0%;
+  margin-left: 16.66667%;
+  margin-right: 16.66667%;
+  border: 2px solid #E2E3D9;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* line 807, ../sass/style.scss */
+.b-addclasses-form__school-dash {
+  display: inline;
+  float: left;
+  width: 33.33333%;
+  margin: 0 0%;
+}
+
+/* line 810, ../sass/style.scss */
+.b-addclasses-form__school-list {
+  display: inline;
+  float: left;
+  width: 66.66667%;
+  margin: 0 0%;
+}
+
+/* line 814, ../sass/style.scss */
+.b-addclasses-form__title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* line 819, ../sass/style.scss */
+.b-addclasses-form__title, .b-addclasses-form__input-group, .b-addclasses-form__button {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/* line 823, ../sass/style.scss */
+.b-addclasses-form__label {
+  margin-bottom: 10px;
+}
+
+/* line 829, ../sass/style.scss */
+.b-addclasses-form__school:focus, .b-addclasses-form__major:focus, .b-addclasses-form__classes:focus {
+  border-color: #5b3b70 !important;
+}
+
+/* line 832, ../sass/style.scss */
+.b-school-list {
+  list-style-type: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 300px;
+  overflow: auto;
+}
+
+/* line 839, ../sass/style.scss */
+.b-school-list__item-img, .b-school-list__item-title, .b-school-list__item-btn {
+  display: inline;
+}
+
+/* line 842, ../sass/style.scss */
+.b-school-list__item {
+  margin-bottom: 5px;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* line 847, ../sass/style.scss */
+.b-school-list__item-img {
+  margin-bottom: 5px;
+}
+
+/* line 850, ../sass/style.scss */
+.b-school-list__item-title {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* line 854, ../sass/style.scss */
+.b-school-list__item-btn {
+  background-color: white;
+  border-color: #cccccc;
+  color: #5b3b70;
+  display: block;
+  text-shadow: none;
+  font-size: 14px;
+  float: right;
+  margin-top: 9px;
+  margin-right: 20px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 867, ../sass/style.scss */
+.b-school-list__item-btn:hover, .b-school-list__item-btn:focus {
+  background-color: #5b3b70;
+  border-color: #5b3b70;
+  color: white;
+}
+
+/*-------- END Add classes page --------- */
 /* Footer */
 /* END Footer */
 /* Responsiveness */
 @media (min-width: 768px) and (max-width: 1033px) {
-  /* line 765, ../sass/style.scss */
-  .b-signup-form {
+  /* line 881, ../sass/style.scss */
+  .b-signup-form, .b-footer__container--signup-form {
     display: inline;
     float: left;
     width: 66.66667%;
@@ -9625,10 +9815,15 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     margin-left: 16.66667%;
     margin-right: 16.66667%;
   }
+
+  /* line 886, ../sass/style.scss */
+  .b-footer__container--signup-form {
+    margin-top: 20px;
+  }
 }
 @media (min-width: 585px) and (max-width: 767px) {
-  /* line 772, ../sass/style.scss */
-  .b-signup-form {
+  /* line 891, ../sass/style.scss */
+  .b-signup-form, .b-footer__container--signup-form {
     display: inline;
     float: left;
     width: 83.33333%;
@@ -9636,53 +9831,67 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     margin-left: 8.33333%;
     margin-right: 8.33333%;
   }
+
+  /* line 896, ../sass/style.scss */
+  .b-footer__container--signup-form {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 584px) {
-  /* line 779, ../sass/style.scss */
-  .b-singnup-body {
+  /* line 901, ../sass/style.scss */
+  .b-body--signup {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  /* line 783, ../sass/style.scss */
-  .b-signup-form, .b-signup-form__create-account, .b-signup-form__social {
+  /* line 905, ../sass/style.scss */
+  .b-signup-form, .b-signup-form__create-account, .b-signup-form__social, .b-footer__container--signup-form {
     display: inline;
     float: left;
     width: 100%;
     margin: 0 0%;
   }
 
-  /* line 786, ../sass/style.scss */
-  .b-signup-form__create-account, .b-signup-form__social {
+  /* line 908, ../sass/style.scss */
+  .b-signup-form__create-account, .b-signup-form__social, .b-footer__container--signup-form {
     text-align: center;
   }
 
-  /* line 789, ../sass/style.scss */
+  /* line 911, ../sass/style.scss */
   .b-signup-form__input-group, .b-signup-form__title {
     margin-left: 0;
   }
 
-  /* line 792, ../sass/style.scss */
+  /* line 914, ../sass/style.scss */
   .b-signup-form__button {
     margin: auto;
     margin-top: 20px;
   }
+
+  /* line 918, ../sass/style.scss */
+  .b-footer__container--signup-form {
+    margin-top: 20px;
+  }
 }
 /* footer */
-/* line 799, ../sass/style.scss */
+/* line 924, ../sass/style.scss */
 .b-footer {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 803, ../sass/style.scss */
+/* line 928, ../sass/style.scss */
 .b-footer__container {
   max-width: 1000px;
+}
+
+/* line 931, ../sass/style.scss */
+.b-footer__container--auto {
   margin: auto;
 }
 
 /* SVG icons */
-/* line 809, ../sass/style.scss */
+/* line 936, ../sass/style.scss */
 .b-calendar-icon {
   color: #5b3b70;
 }
