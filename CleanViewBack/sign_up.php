@@ -24,7 +24,7 @@
   </head>
 
   <body class="b-body b-body--signup">
-    <h1 class="b-signup-page-logo">PeerCal</h1>
+    <h1 class="b-signup-page-logo">PeerCalendar</h1>
     <div class="b-signup-form">
       
         <div class="b-signup-form__create-account">
@@ -60,9 +60,11 @@
         </div>  
       </div>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+      <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
       <script>
-        $(".b-signup-form__name").focus();
+        $(document).ready(function() {
+          $(".b-signup-form__name").focus();
+        });  
       </script>  
    </body>
 </html>    
